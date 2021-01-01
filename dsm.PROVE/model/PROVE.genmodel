@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/dsm.PROVE/src-gen" creationIcons="false" editDirectory="/dsm.PROVE.edit/src-gen"
+    editorDirectory="/dsm.PROVE.editor/src-gen" modelPluginID="dsm.PROVE" modelName="PROVE"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>PROVE.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="PROVE" basePackage="dsm" disposableProviderFactory="true" ecorePackage="PROVE.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PROVE.ecore#//ShadowNodeTypeENUM">
+      <genEnumLiterals ecoreEnumLiteral="PROVE.ecore#//ShadowNodeTypeENUM/Reserved_NotInUse"/>
+      <genEnumLiterals ecoreEnumLiteral="PROVE.ecore#//ShadowNodeTypeENUM/Input"/>
+      <genEnumLiterals ecoreEnumLiteral="PROVE.ecore#//ShadowNodeTypeENUM/Output"/>
+      <genEnumLiterals ecoreEnumLiteral="PROVE.ecore#//ShadowNodeTypeENUM/Internal"/>
+    </genEnums>
+    <genClasses ecoreClass="PROVE.ecore#//Artifact">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Artifact/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Artifact/name"/>
+    </genClasses>
+    <genClasses ecoreClass="PROVE.ecore#//ArtifactState">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//ArtifactState/achievedStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//ArtifactState/artifactName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//ArtifactState/artifactstateinstance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//ArtifactState/name"/>
+    </genClasses>
+    <genClasses ecoreClass="PROVE.ecore#//Process">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/artifact"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/process"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Process/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Process/notes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/artifactInStateUsed"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/resultArtifactInState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/shadownodeincoming"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/shadownodeoutgoing"/>
+    </genClasses>
+    <genClasses ecoreClass="PROVE.ecore#//ShadowNodeIncoming"/>
+    <genClasses ecoreClass="PROVE.ecore#//ShadowNodeOutgoing"/>
+    <genClasses ecoreClass="PROVE.ecore#//ArtifactStateInstance">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//ArtifactStateInstance/usedByActivity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//ArtifactStateInstance/originatingActivity"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

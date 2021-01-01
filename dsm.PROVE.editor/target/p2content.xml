@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='dsm.PROVE.editor' version='1.0.0.202101011010' generation='2'>
+    <update id='dsm.PROVE.editor' range='[0.0.0,1.0.0.202101011010)' severity='0'/>
+    <properties size='8'>
+      <property name='df_LT.pluginName' value='dsm.PROVE Editor'/>
+      <property name='df_LT.providerName' value='www.example.org'/>
+      <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+      <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='sirius.clean'/>
+      <property name='maven-artifactId' value='dsm.PROVE.editor'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='6'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.editor' version='1.0.0.202101011010'/>
+      <provided namespace='osgi.bundle' name='dsm.PROVE.editor' version='1.0.0.202101011010'/>
+      <provided namespace='java.package' name='dsm.PROVE.presentation' version='0.0.0'/>
+      <provided namespace='osgi.identity' name='dsm.PROVE.editor' version='1.0.0.202101011010'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+    </provides>
+    <requires size='11'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='dsm.PROVE.edit' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='dsm.PROVE' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius' range='6.3.0'/>
+      <required namespace='osgi.bundle' name='PROVE.design' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius.ui' range='6.3.0'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='dsm.PROVE.editor' version='1.0.0.202101011010'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: dsm.PROVE.editor;singleton:=true&#xA;Bundle-Version: 1.0.0.202101011010&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

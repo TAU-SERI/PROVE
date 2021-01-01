@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: dsm.PROVE.edit
+Bundle-SymbolicName: dsm.PROVE.edit;singleton:=true
+Require-Bundle: org.eclipse.core.runtime,dsm.PROVE;visibility:=reexpor
+ t,org.eclipse.emf.edit;visibility:=reexport
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: dsm.PROVE.provider
+Bundle-Name: %pluginName
+Bundle-Version: 1.0.0.202101011010
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Bundle-Activator: dsm.PROVE.provider.PROVEEditPlugin$Implementation
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="PROVE" nsURI="dsm.PROVE" nsPrefix="PROVE">
+  <eClassifiers xsi:type="ecore:EClass" name="Artifact">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="state" upperBound="-1"
+        eType="#//ArtifactState" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArtifactState">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="achievedStatus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="artifactName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="artifactstateinstance"
+        upperBound="-1" eType="#//ArtifactStateInstance" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Process">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="artifact" upperBound="-1"
+        eType="#//Artifact" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="process" upperBound="-1"
+        eType="#//Process" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="notes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="artifactInStateUsed" upperBound="-1"
+        eType="#//ArtifactStateInstance" eOpposite="#//ArtifactStateInstance/usedByActivity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resultArtifactInState"
+        upperBound="-1" eType="#//ArtifactStateInstance" eOpposite="#//ArtifactStateInstance/originatingActivity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shadownodeincoming" lowerBound="1"
+        eType="#//ShadowNodeIncoming" changeable="false" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shadownodeoutgoing" lowerBound="1"
+        eType="#//ShadowNodeOutgoing" changeable="false" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ShadowNodeTypeENUM">
+    <eLiterals name="Reserved_NotInUse"/>
+    <eLiterals name="Input" value="1"/>
+    <eLiterals name="Output" value="2"/>
+    <eLiterals name="Internal" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShadowNodeIncoming" eSuperTypes="#//Process">
+    <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
+      <details key="archetype" value="Description"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Used for representation purposes only."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShadowNodeOutgoing" eSuperTypes="#//Process">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Used for representation purposes only."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArtifactStateInstance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedByActivity" eType="#//Process"
+        eOpposite="#//Process/artifactInStateUsed"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="originatingActivity" eType="#//Process"
+        eOpposite="#//Process/resultArtifactInState"/>
+  </eClassifiers>
+</ecore:EPackage>
