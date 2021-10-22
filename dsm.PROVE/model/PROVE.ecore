@@ -24,10 +24,10 @@
         eType="#//ArtifactStateInstance" eOpposite="#//ArtifactStateInstance/usedByActivity"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="resultArtifactInState"
         upperBound="-1" eType="#//ArtifactStateInstance" eOpposite="#//ArtifactStateInstance/originatingActivity"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="shadownodeincoming" lowerBound="1"
-        eType="#//ShadowNodeIncoming" changeable="false" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="shadownodeoutgoing" lowerBound="1"
-        eType="#//ShadowNodeOutgoing" changeable="false" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shadownodeincoming" eType="#//ShadowNodeIncoming"
+        changeable="false" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shadownodeoutgoing" eType="#//ShadowNodeOutgoing"
+        changeable="false" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ShadowNodeTypeENUM">
     <eLiterals name="Reserved_NotInUse"/>

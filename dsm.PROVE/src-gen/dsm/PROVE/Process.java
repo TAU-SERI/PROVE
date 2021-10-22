@@ -132,7 +132,7 @@ public interface Process extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shadownodeincoming</em>' containment reference.
 	 * @see dsm.PROVE.PROVEPackage#getProcess_Shadownodeincoming()
-	 * @model containment="true" required="true" changeable="false"
+	 * @model containment="true" changeable="false"
 	 * @generated
 	 */
 	ShadowNodeIncoming getShadownodeincoming();
@@ -143,7 +143,7 @@ public interface Process extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shadownodeoutgoing</em>' containment reference.
 	 * @see dsm.PROVE.PROVEPackage#getProcess_Shadownodeoutgoing()
-	 * @model containment="true" required="true" changeable="false"
+	 * @model containment="true" changeable="false"
 	 * @generated
 	 */
 	ShadowNodeOutgoing getShadownodeoutgoing();

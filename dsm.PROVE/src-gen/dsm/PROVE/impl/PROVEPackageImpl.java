@@ -507,10 +507,10 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 				dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProcess_Shadownodeincoming(), this.getShadowNodeIncoming(), null, "shadownodeincoming", null,
-				1, 1, dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE,
+				0, 1, dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProcess_Shadownodeoutgoing(), this.getShadowNodeOutgoing(), null, "shadownodeoutgoing", null,
-				1, 1, dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE,
+				0, 1, dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shadowNodeIncomingEClass, ShadowNodeIncoming.class, "ShadowNodeIncoming", !IS_ABSTRACT,

@@ -301,6 +301,12 @@ public class PROVEModelWizard extends Wizard implements INewWizard {
 		}
 	}
 
+	/**
+	 * ??????????????
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated not
+	 */
 	private IProject activateProject() {
 		// TODO Auto-generated method stub
 		// Avi
