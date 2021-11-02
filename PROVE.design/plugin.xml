@@ -7,4 +7,30 @@
 	       name="PROVE">
     </component>
   </extension>
+  <extension
+        point="org.eclipse.ui.newWizards">
+     <category
+           id="PROVE.wizardCat"
+           name="PROVE">
+     </category>
+     <wizard
+           category="dsm.PROVE.wizardCat"
+           class="PROVE.design.wizards.PROVEprojectNewWizard"
+           finalPerspective="org.eclipse.sirius.ui.tools.perspective.modeling"
+           icon="icons/ArtifactInState.png"
+           id="PROVE.design.newProject"
+           name="New PROVE project"
+           preferredPerspectives="org.eclipse.sirius.ui.tools.perspective.modeling"
+           project="true">
+     </wizard>
+  </extension>
+  <extension
+        point="org.eclipse.ui.perspectiveExtensions">
+     <perspectiveExtension
+           targetID="org.eclipse.sirius.ui.tools.perspective.modeling">
+        <actionSet
+              id="PROVE.design.newProject">
+        </actionSet>
+     </perspectiveExtension>
+  </extension>
 </plugin>

@@ -9,8 +9,18 @@ Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: dsm.PROVE,
- dsm.PROVE.impl,
- dsm.PROVE.util
+ dsm.PROVE.impl;
+  uses:="org.eclipse.emf.ecore,
+   org.eclipse.emf.ecore.impl,
+   org.eclipse.emf.common.util,
+   org.eclipse.emf.common.notify,
+   dsm.PROVE",
+ dsm.PROVE.util;
+  uses:="org.eclipse.emf.ecore,
+   org.eclipse.emf.common.notify,
+   org.eclipse.emf.common.notify.impl,
+   dsm.PROVE,
+   org.eclipse.emf.ecore.util"
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy

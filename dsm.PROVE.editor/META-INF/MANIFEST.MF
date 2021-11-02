@@ -18,6 +18,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.ui.ide;visibility:=reexport,
  dsm.PROVE,
  org.eclipse.sirius;bundle-version="6.3.0",
- PROVE.design;bundle-version="1.0.0",
  org.eclipse.sirius.ui;bundle-version="6.3.0"
 Bundle-ActivationPolicy: lazy

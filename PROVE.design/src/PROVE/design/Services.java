@@ -9,13 +9,13 @@ import java.util.stream.Collectors;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.omg.CORBA.ACTIVITY_COMPLETED;
+//import org.omg.CORBA.ACTIVITY_COMPLETED;
 
 import dsm.PROVE.*;
 import dsm.PROVE.Process;
 import dsm.PROVE.impl.ArtifactImpl;
-import javafx.animation.PauseTransition;
-import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
+//import javafx.animation.PauseTransition;
+//import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
 
 
 import org.eclipse.sirius.diagram.DDiagram;

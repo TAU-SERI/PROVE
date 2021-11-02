@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='osgi.bundle' id='PROVE.design' version='1.0.0.202101011010'>
+  <artifact classifier='osgi.bundle' id='PROVE.design' version='1.0.0.202111021216'>
     <properties size='5'>
-      <property name='artifact.size' value='301925'/>
-      <property name='download.size' value='301925'/>
-      <property name='maven-groupId' value='sirius.clean'/>
+      <property name='artifact.size' value='326857'/>
+      <property name='download.size' value='326857'/>
+      <property name='maven-groupId' value='PROVE'/>
       <property name='maven-artifactId' value='PROVE.design'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
