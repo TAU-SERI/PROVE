@@ -426,7 +426,7 @@
           <conditionnalStyles predicateExpression="aql: self.usedByActivity.eContainer(PROVE::Process)&lt;>self.originatingActivity.eContainer(PROVE::Process) and self.usedByActivity. eContainer()&lt;>self.originatingActivity and self.originatingActivity.eContainer()&lt;>self.usedByActivity">
             <style sizeComputationExpression="2">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
-              <centerLabelStyleDescription labelSize="12">
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="aql:self.eContainer().artifactName+'::'+self.eContainer().name">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </centerLabelStyleDescription>
             </style>
