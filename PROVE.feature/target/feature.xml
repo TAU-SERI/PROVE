@@ -2,7 +2,7 @@
 <feature
       id="PROVE.feature"
       label="Feature"
-      version="1.0.0.202111021216"
+      version="1.0.0.202111121816"
       provider-name="Avi Shaked">
 
    <description url="https://github.com/TAU-SERI/PROVE">
@@ -66,28 +66,28 @@ by Avi Shaked
          id="dsm.PROVE.edit"
          download-size="187"
          install-size="240"
-         version="1.0.0.202111021216"
+         version="1.0.0.202111121816"
          unpack="false"/>
 
    <plugin
          id="dsm.PROVE.editor"
          download-size="61"
          install-size="118"
-         version="1.0.0.202111021216"
+         version="1.0.0.202111121816"
          unpack="false"/>
 
    <plugin
          id="dsm.PROVE"
          download-size="44"
          install-size="197"
-         version="1.0.0.202111021216"
+         version="1.0.0.202111121816"
          unpack="false"/>
 
    <plugin
          id="PROVE.design"
-         download-size="319"
-         install-size="668"
-         version="1.0.0.202111021216"
+         download-size="323"
+         install-size="683"
+         version="1.0.0.202111121816"
          unpack="false"/>
 
 </feature>
