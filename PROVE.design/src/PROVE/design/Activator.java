@@ -4,7 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.eclipse.sirius.business.api.componentization.ViewpointRegistry;
+import org.eclipse.sirius.business.api.session.SessionManager;
+import org.eclipse.sirius.ui.business.api.dialect.DialectEditor;
+import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
 import org.eclipse.sirius.viewpoint.description.Viewpoint;
+import org.eclipse.ui.IWorkbench;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
@@ -37,7 +43,12 @@ public class Activator extends AbstractUIPlugin {
       super.start(context);
 	  plugin = this;
 	  viewpoints = new HashSet<Viewpoint>();
-	  viewpoints.addAll(ViewpointRegistry.getInstance().registerFromPlugin(PLUGIN_ID + "/description/PROVE.odesign")); 
+	  viewpoints.addAll(ViewpointRegistry.getInstance().registerFromPlugin(PLUGIN_ID + "/description/PROVE.odesign"));
+	  //Open Modeling Perspective
+	  IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+	  PlatformUI.getWorkbench().showPerspective("org.eclipse.sirius.ui.tools.perspective.modeling",window);
+	  //Open default diagram - PROVE MK2 - FUTURE IMPLEMENTATION PLACEHOLDER
+	  	//DialectUIManager.INSTANCE.openEditor(SessionManager.INSTANCE.getExistingSession(null), null, null);	  
     }
 
     /*
