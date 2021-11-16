@@ -105,7 +105,7 @@ public class PROVEprojectNewWizard extends BasicNewProjectResourceWizard impleme
 			EObject eObject = (EObject) ite.next();
 			if (eObject instanceof DSemanticDiagram) {
 				DSemanticDiagram rep = (DSemanticDiagram) eObject;
-				if ("PROVE diagram".equals(rep.getDescription().getName())) {
+				if ("PROVE diagram MK2".equals(rep.getDescription().getName())) {
 					return rep;
 				}
 
