@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="PROVE" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="PROVE" version="12.0.0.2017041100">
   <ownedViewpoints name="PROVEviewpointMk2" label="PROVE Viewpoint Mk2">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="ArtifactLife diagram" titleExpression="aql: self.name + ' Artifact-Life Diagram'" domainClass="PROVE::Artifact" rootExpression="aql: self" enablePopupBars="true">
       <metamodel href="dsm.PROVE#/"/>
@@ -59,6 +59,17 @@
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="PROVE diagram MK2" titleExpression="aql: self.name + ' PROVE Diagram MK2'" initialisation="true" showOnStartup="true" domainClass="PROVE::Process" enablePopupBars="true">
       <metamodel href="dsm.PROVE#/"/>
+      <validationSet name="Design tips">
+        <ownedRules xsi:type="validation:ViewValidationRule" name="crossHierarchies" level="WARNING" message="aql: 'This artifact-in-state flow is not well coordinated between hierarchies (' + self.target.eContainer(PROVE::Artifact).name + '::' + self.target.eContainer(PROVE::ArtifactState).name +' from '+ self.target.originatingActivity.name + ' to ' + self.target.usedByActivity.name +')'" targets="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']">
+          <audits auditExpression="aql: (self.target.usedByActivity.eContainer(PROVE::Process)==self.target.originatingActivity.eContainer(PROVE::Process)) or (self.target.usedByActivity. eContainer()==self.target.originatingActivity) or (self.target.originatingActivity.eContainer()==self.target.usedByActivity)"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:ViewValidationRule" name="noArtifactSpecified" level="ERROR" message="aql: 'This flow has no associated artifact (' + self.target.originatingActivity.name + ' to ' + self.target.usedByActivity.name + ')'" targets="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']">
+          <audits auditExpression="aql: self.target.eContainer(PROVE::Artifact).name&lt;>'undefined'"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:ViewValidationRule" name="noStateSpecified" message="aql: 'The artifact in this flow has no specified state (' + self.target.eContainer(PROVE::Artifact).name + ' from ' + self.target.originatingActivity.name + ' to ' + self.target.usedByActivity.name + ')'" targets="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']">
+          <audits auditExpression="aql: self.target.eContainer(PROVE::ArtifactState).name&lt;>'undefined'"/>
+        </ownedRules>
+      </validationSet>
       <layout xsi:type="description_1:CompositeLayout" padding="100" direction="LeftToRight"/>
       <defaultLayer name="Default">
         <nodeMappings name="Process_PD" preconditionExpression="aql: self->notEmpty()=false" semanticCandidatesExpression="aql: self" synchronizationLock="true" domainClass="PROVE::Process" dropDescriptions="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@toolSections.0/@ownedTools[name='ReconnectFlowDestination'] //@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@toolSections.0/@ownedTools[name='ReconnectFlowSource'] //@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@toolSections.0/@ownedTools[name='MoveActivity']">
@@ -168,7 +179,7 @@
                   </buttons>
                   <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
                     <initialOperation>
-                      <firstModelOperations xsi:type="tool_1:Let" variableName="foundArtifact" valueExpression="aql: OrderedSet{source, target}.ancestors().eAllContents()->select(artifact | artifact.name = newArtifactName)->last()">
+                      <firstModelOperations xsi:type="tool_1:Let" variableName="foundArtifact" valueExpression="aql: OrderedSet{source, target}.ancestors().eAllContents()->select(artifact | artifact.name == newArtifactName)->last()">
                         <subModelOperations xsi:type="tool_1:Let" variableName="foundArtifactByNameFailed" valueExpression="aql: foundArtifact->isEmpty()">
                           <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: foundArtifactByNameFailed=true">
                             <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Artifact not found">
