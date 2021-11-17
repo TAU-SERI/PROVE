@@ -69,6 +69,12 @@
         <ownedRules xsi:type="validation:ViewValidationRule" name="noStateSpecified" message="aql: 'The artifact in this flow has no specified state (' + self.target.eContainer(PROVE::Artifact).name + ' from ' + self.target.originatingActivity.name + ' to ' + self.target.usedByActivity.name + ')'" targets="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']">
           <audits auditExpression="aql: self.target.eContainer(PROVE::ArtifactState).name&lt;>'undefined'"/>
         </ownedRules>
+        <ownedRules xsi:type="validation:ViewValidationRule" name="activityWithoutOutput" level="WARNING" message="aql: 'This activity has no specified output (' + self.target.name + ')'" targets="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@nodeMappings[name='Process_PD'] //@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD'] //@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD'] //@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']">
+          <audits auditExpression="aql: self.target.resultArtifactInState->notEmpty()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:ViewValidationRule" name="inconsistentStatus" message="aql: 'This achieved artifact-in-state is the output of an activity with no achieved input (' +self.target.eContainer(PROVE::Artifact).name + '::' + self.target.eContainer(PROVE::ArtifactState).name + ' from ' + self.target.originatingActivity.name + ' )'" targets="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']">
+          <audits auditExpression="aql: self.target.eContainer(PROVE::ArtifactState).achievedStatus==false or self.target.originatingActivity.artifactInStateUsed->isEmpty() or self.target.originatingActivity.artifactInStateUsed->select(flow|flow.eContainer(PROVE::ArtifactState).achievedStatus==true)->notEmpty()"/>
+        </ownedRules>
       </validationSet>
       <layout xsi:type="description_1:CompositeLayout" padding="100" direction="LeftToRight"/>
       <defaultLayer name="Default">
@@ -179,26 +185,15 @@
                   </buttons>
                   <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
                     <initialOperation>
-                      <firstModelOperations xsi:type="tool_1:Let" variableName="foundArtifact" valueExpression="aql: OrderedSet{source, target}.ancestors().eAllContents()->select(artifact | artifact.name == newArtifactName)->last()">
+                      <firstModelOperations xsi:type="tool_1:Let" variableName="foundArtifact" valueExpression="aql: source.ancestors()->last().eAllContents()->select(artifact | artifact.name == newArtifactName)->last()">
                         <subModelOperations xsi:type="tool_1:Let" variableName="foundArtifactByNameFailed" valueExpression="aql: foundArtifact->isEmpty()">
                           <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: foundArtifactByNameFailed=true">
-                            <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Artifact not found">
-                              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
-                                <initialOperation/>
-                              </buttons>
-                              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
-                                <initialOperation>
-                                  <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: source.ancestors()->last()">
-                                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="PROVE::Artifact" referenceName="artifact" variableName="foundArtifact">
-                                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:foundArtifact">
-                                        <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql: newArtifactName"/>
-                                      </subModelOperations>
-                                    </subModelOperations>
-                                  </firstModelOperations>
-                                </initialOperation>
-                              </buttons>
-                              <page name="Confirm creation" labelExpression="Confirm creation of new artifact by clicking on 'OK' (otherwise 'CANCEL')" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@toolSections.0/@ownedTools[name='ArtifactInState']/@initialOperation/@firstModelOperations/@subModelOperations.0/@buttons.1/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
-                              <groups name="Default Group" labelExpression="Group" semanticCandidateExpression="var:self"/>
+                            <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: source.ancestors()->last()">
+                              <subModelOperations xsi:type="tool_1:CreateInstance" typeName="PROVE::Artifact" referenceName="artifact" variableName="foundArtifact">
+                                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:foundArtifact">
+                                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql: newArtifactName"/>
+                                </subModelOperations>
+                              </subModelOperations>
                             </subModelOperations>
                           </subModelOperations>
                           <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:foundArtifact">
@@ -224,21 +219,41 @@
                       </firstModelOperations>
                     </initialOperation>
                   </buttons>
-                  <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@toolSections.0/@ownedTools[name='ArtifactInState']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="Default Group" semanticCandidateExpression="var:self">
-                    <controls xsi:type="properties:TextDescription" name="ArtifactName" labelExpression="Artifact Name:">
-                      <initialOperation>
-                        <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
-                          <subModelOperations xsi:type="tool_1:Let" variableName="newArtifactName" valueExpression="aql:newValue"/>
-                        </firstModelOperations>
-                      </initialOperation>
+                  <page name="ArtifactCreationPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@toolSections.0/@ownedTools[name='ArtifactInState']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
+                  <groups name="ArtifactCreationGroup" semanticCandidateExpression="var:self">
+                    <controls xsi:type="properties:ContainerDescription" name="ArtifactSelectionContainer">
+                      <controls xsi:type="properties:TextDescription" name="ArtifactNameForFlow" labelExpression="Enter new artifact name:">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                            <subModelOperations xsi:type="tool_1:Let" variableName="newArtifactName" valueExpression="aql:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
+                      <controls xsi:type="properties:SelectDescription" name="SelectArtifactNameForFlow" labelExpression="or select from existing artifacts:" valueExpression="aql: newArtifact" candidatesExpression="aql: self.eAllContents(PROVE::Artifact)" candidateDisplayExpression="aql: candidate.name.toString()">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                            <subModelOperations xsi:type="tool_1:Let" variableName="newArtifact" valueExpression="aql: newValue"/>
+                            <subModelOperations xsi:type="tool_1:Let" variableName="newArtifactName" valueExpression="aql: newArtifact.name"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
                     </controls>
-                    <controls xsi:type="properties:TextDescription" labelExpression="State name:">
-                      <initialOperation>
-                        <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
-                          <subModelOperations xsi:type="tool_1:Let" variableName="newStateName" valueExpression="aql:newValue"/>
-                        </firstModelOperations>
-                      </initialOperation>
+                    <controls xsi:type="properties:ContainerDescription" name="ArtifactStateSelectionContainer">
+                      <controls xsi:type="properties:TextDescription" name="StateNameForFlow" labelExpression="Enter desired state:">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                            <subModelOperations xsi:type="tool_1:Let" variableName="newStateName" valueExpression="aql:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
+                      <controls xsi:type="properties:SelectDescription" labelExpression="or select from existing states:" valueExpression="aql: newArtifactState" candidatesExpression="aql: newArtifact.eContents(PROVE::ArtifactState)" candidateDisplayExpression="aql: candidate.name">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                            <subModelOperations xsi:type="tool_1:Let" variableName="newArtifactState" valueExpression="aql: newValue"/>
+                            <subModelOperations xsi:type="tool_1:Let" variableName="newStateName" valueExpression="aql: newArtifactState.name"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
                     </controls>
                   </groups>
                 </subModelOperations>
