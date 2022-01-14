@@ -4,11 +4,11 @@
     <semanticResources>PROVEdemo.prove</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_UioEMFEzEey1WeYk_guAwg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_g8Y0cXVJEeyCMJ5ihucoNg" name="Demo PROVE Diagram MK2" repPath="#_g8W_QHVJEeyCMJ5ihucoNg" changeId="03b21549-fff6-481f-a262-09101e691906">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_g8Y0cXVJEeyCMJ5ihucoNg" name="Demo PROVE Diagram MK2" repPath="#_g8W_QHVJEeyCMJ5ihucoNg" changeId="7c1e3c41-ba91-4df7-9195-075cf91169bf">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
         <target xmi:type="PROVE:Process" href="PROVEdemo.prove#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_kwxFAHVJEeyCMJ5ihucoNg" name="Sys Dev PROVE Diagram MK2" repPath="#_kwvP0HVJEeyCMJ5ihucoNg" changeId="91b9cb72-afba-44ee-ae5d-3dcf0078af21">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_kwxFAHVJEeyCMJ5ihucoNg" name="Sys Dev PROVE Diagram MK2" repPath="#_kwvP0HVJEeyCMJ5ihucoNg" changeId="abfbcb23-898e-4d55-bcd2-d40a2c65da0b">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
         <target xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0"/>
       </ownedRepresentationDescriptors>
@@ -45,6 +45,28 @@
                             </children>
                             <styles xmi:type="notation:ShapeStyle" xmi:id="_g_OGAXVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
                             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g_OGAnVJEeyCMJ5ihucoNg" x="-2" width="10" height="10"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_LSrroHVKEeyCMJ5ihucoNg" type="3012" element="_LRkRUnVKEeyCMJ5ihucoNg">
+                            <children xmi:type="notation:Node" xmi:id="_LSsSsHVKEeyCMJ5ihucoNg" type="5010">
+                              <layoutConstraint xmi:type="notation:Location" xmi:id="_LSsSsXVKEeyCMJ5ihucoNg" y="5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_LSs5wHVKEeyCMJ5ihucoNg" type="3002" element="_LRk4YHVKEeyCMJ5ihucoNg">
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_LSs5wXVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSs5wnVKEeyCMJ5ihucoNg"/>
+                            </children>
+                            <styles xmi:type="notation:ShapeStyle" xmi:id="_LSrroXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSrronVKEeyCMJ5ihucoNg" x="36" y="-2" width="10" height="10"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_Mpo3gHVKEeyCMJ5ihucoNg" type="3012" element="_MoxU0HVKEeyCMJ5ihucoNg">
+                            <children xmi:type="notation:Node" xmi:id="_MppekHVKEeyCMJ5ihucoNg" type="5010">
+                              <layoutConstraint xmi:type="notation:Location" xmi:id="_MppekXVKEeyCMJ5ihucoNg" y="5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_MpqFoHVKEeyCMJ5ihucoNg" type="3002" element="_MoxU0XVKEeyCMJ5ihucoNg">
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_MpqFoXVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpqFonVKEeyCMJ5ihucoNg"/>
+                            </children>
+                            <styles xmi:type="notation:ShapeStyle" xmi:id="_Mpo3gXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mpo3gnVKEeyCMJ5ihucoNg" x="36" y="32" width="10" height="10"/>
                           </children>
                           <styles xmi:type="notation:ShapeStyle" xmi:id="_g_ImcXVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
                           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g_ImcnVJEeyCMJ5ihucoNg" x="102" y="101"/>
@@ -99,6 +121,46 @@
                           </children>
                           <styles xmi:type="notation:ShapeStyle" xmi:id="_g_M34XVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
                           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g_M34nVJEeyCMJ5ihucoNg" x="294" y="245"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_BBB1oHVKEeyCMJ5ihucoNg" type="3008" element="_BAMII3VKEeyCMJ5ihucoNg">
+                          <children xmi:type="notation:Node" xmi:id="_BBCcsHVKEeyCMJ5ihucoNg" type="5005"/>
+                          <children xmi:type="notation:Node" xmi:id="_BBCcsXVKEeyCMJ5ihucoNg" type="7002">
+                            <styles xmi:type="notation:SortingStyle" xmi:id="_BBCcsnVKEeyCMJ5ihucoNg"/>
+                            <styles xmi:type="notation:FilteringStyle" xmi:id="_BBCcs3VKEeyCMJ5ihucoNg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_LStg0HVKEeyCMJ5ihucoNg" type="3012" element="_LRn7snVKEeyCMJ5ihucoNg">
+                            <children xmi:type="notation:Node" xmi:id="_LSuH4HVKEeyCMJ5ihucoNg" type="5010">
+                              <layoutConstraint xmi:type="notation:Location" xmi:id="_LSuH4XVKEeyCMJ5ihucoNg" y="5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_LSuu8HVKEeyCMJ5ihucoNg" type="3002" element="_LRoiwHVKEeyCMJ5ihucoNg">
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_LSuu8XVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSuu8nVKEeyCMJ5ihucoNg"/>
+                            </children>
+                            <styles xmi:type="notation:ShapeStyle" xmi:id="_LStg0XVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LStg0nVKEeyCMJ5ihucoNg" x="66" y="24" width="10" height="10"/>
+                          </children>
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_BBB1oXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BBB1onVKEeyCMJ5ihucoNg" x="296" y="89"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_H_A7cHVKEeyCMJ5ihucoNg" type="3008" element="_H-ORQXVKEeyCMJ5ihucoNg">
+                          <children xmi:type="notation:Node" xmi:id="_H_BigHVKEeyCMJ5ihucoNg" type="5005"/>
+                          <children xmi:type="notation:Node" xmi:id="_H_CJkHVKEeyCMJ5ihucoNg" type="7002">
+                            <styles xmi:type="notation:SortingStyle" xmi:id="_H_CJkXVKEeyCMJ5ihucoNg"/>
+                            <styles xmi:type="notation:FilteringStyle" xmi:id="_H_CJknVKEeyCMJ5ihucoNg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_MpqssHVKEeyCMJ5ihucoNg" type="3012" element="_Mo1mQHVKEeyCMJ5ihucoNg">
+                            <children xmi:type="notation:Node" xmi:id="_Mpqss3VKEeyCMJ5ihucoNg" type="5010">
+                              <layoutConstraint xmi:type="notation:Location" xmi:id="_MpqstHVKEeyCMJ5ihucoNg" y="5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_MprTwHVKEeyCMJ5ihucoNg" type="3002" element="_Mo1mQXVKEeyCMJ5ihucoNg">
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_MprTwXVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MprTwnVKEeyCMJ5ihucoNg"/>
+                            </children>
+                            <styles xmi:type="notation:ShapeStyle" xmi:id="_MpqssXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpqssnVKEeyCMJ5ihucoNg" x="48" y="-2" width="10" height="10"/>
+                          </children>
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_H_A7cXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_A7cnVKEeyCMJ5ihucoNg" x="318" y="161"/>
                         </children>
                         <styles xmi:type="notation:SortingStyle" xmi:id="_g-5V4nVJEeyCMJ5ihucoNg"/>
                         <styles xmi:type="notation:FilteringStyle" xmi:id="_g-5V43VJEeyCMJ5ihucoNg"/>
@@ -631,6 +693,38 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hATEEHVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hATEEXVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_LSzAYHVKEeyCMJ5ihucoNg" type="4001" element="_LR0wBHVKEeyCMJ5ihucoNg" source="_LSrroHVKEeyCMJ5ihucoNg" target="_LStg0HVKEeyCMJ5ihucoNg">
+          <children xmi:type="notation:Node" xmi:id="_LSzncHVKEeyCMJ5ihucoNg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSzncXVKEeyCMJ5ihucoNg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LSzncnVKEeyCMJ5ihucoNg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSznc3VKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LSzndHVKEeyCMJ5ihucoNg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSzndXVKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_LSzAYXVKEeyCMJ5ihucoNg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_LSzAYnVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LSzAY3VKEeyCMJ5ihucoNg" points="[5, 0, -219, -14]$[219, 13, -5, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LS0OgHVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LS0OgXVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Mpu-IHVKEeyCMJ5ihucoNg" type="4001" element="_MpAlYHVKEeyCMJ5ihucoNg" source="_Mpo3gHVKEeyCMJ5ihucoNg" target="_MpqssHVKEeyCMJ5ihucoNg">
+          <children xmi:type="notation:Node" xmi:id="_MpvlMHVKEeyCMJ5ihucoNg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpvlMXVKEeyCMJ5ihucoNg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MpvlMnVKEeyCMJ5ihucoNg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpvlM3VKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MpvlNHVKEeyCMJ5ihucoNg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpvlNXVKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Mpu-IXVKEeyCMJ5ihucoNg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Mpu-InVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mpu-I3VKEeyCMJ5ihucoNg" points="[5, 0, -223, -26]$[223, 25, -5, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MpwMQHVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MpwMQXVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_g-E2gHVJEeyCMJ5ihucoNg" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -821,6 +915,22 @@
                 </ownedStyle>
                 <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']"/>
               </ownedBorderedNodes>
+              <ownedBorderedNodes xmi:type="diagram:DNode" uid="_LRkRUnVKEeyCMJ5ihucoNg" tooltipText="deliverable/source" outgoingEdges="_LR0wBHVKEeyCMJ5ihucoNg" width="1" height="1">
+                <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+                <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+                <ownedStyle xmi:type="diagram:Dot" uid="_LRk4YHVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+                  <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']"/>
+              </ownedBorderedNodes>
+              <ownedBorderedNodes xmi:type="diagram:DNode" uid="_MoxU0HVKEeyCMJ5ihucoNg" tooltipText="deliverable/source" outgoingEdges="_MpAlYHVKEeyCMJ5ihucoNg" width="1" height="1">
+                <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+                <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+                <ownedStyle xmi:type="diagram:Dot" uid="_MoxU0XVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+                  <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']"/>
+              </ownedBorderedNodes>
               <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_g9Y6AXVJEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
                 <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
               </ownedStyle>
@@ -862,6 +972,41 @@
                 <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']"/>
               </ownedBorderedNodes>
               <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_g9bWQXVJEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+            </ownedDiagramElements>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_BAMII3VKEeyCMJ5ihucoNg" name="SW design">
+              <target xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.3"/>
+              <semanticElements xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.3"/>
+              <ownedBorderedNodes xmi:type="diagram:DNode" uid="_LRn7snVKEeyCMJ5ihucoNg" tooltipText="prerequisite/destination" incomingEdges="_LR0wBHVKEeyCMJ5ihucoNg" width="1" height="1">
+                <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+                <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+                <ownedStyle xmi:type="diagram:Dot" uid="_LRoiwHVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+                  <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']"/>
+              </ownedBorderedNodes>
+              <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+              <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+              <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_BAMIJHVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+            </ownedDiagramElements>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_H-ORQXVKEeyCMJ5ihucoNg" name="HW design">
+              <target xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.4"/>
+              <semanticElements xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.4"/>
+              <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Mo1mQHVKEeyCMJ5ihucoNg" tooltipText="prerequisite/destination" incomingEdges="_MpAlYHVKEeyCMJ5ihucoNg" width="1" height="1">
+                <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+                <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+                <ownedStyle xmi:type="diagram:Dot" uid="_Mo1mQXVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+                  <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']"/>
+              </ownedBorderedNodes>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_H-ORQnVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
                 <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
               </ownedStyle>
               <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
@@ -1060,6 +1205,24 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']"/>
     </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_LR0wBHVKEeyCMJ5ihucoNg" name="SWreq::undefined" sourceNode="_LRkRUnVKEeyCMJ5ihucoNg" targetNode="_LRn7snVKEeyCMJ5ihucoNg">
+      <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+      <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_LR1XEHVKEeyCMJ5ihucoNg" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_LR1XEXVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_MpAlYHVKEeyCMJ5ihucoNg" name="HWreq::undefined" sourceNode="_MoxU0HVKEeyCMJ5ihucoNg" targetNode="_Mo1mQHVKEeyCMJ5ihucoNg">
+      <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+      <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_MpBMcHVKEeyCMJ5ihucoNg" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_MpBMcXVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_g8XmUHVJEeyCMJ5ihucoNg"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer"/>
@@ -1091,8 +1254,30 @@
                     <styles xmi:type="notation:ShapeStyle" xmi:id="_kx4fUXVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kx4fUnVJEeyCMJ5ihucoNg" x="-2" y="12" width="10" height="10"/>
                   </children>
+                  <children xmi:type="notation:Node" xmi:id="_LSkW4HVKEeyCMJ5ihucoNg" type="3012" element="_LSQ04HVKEeyCMJ5ihucoNg">
+                    <children xmi:type="notation:Node" xmi:id="_LSk98HVKEeyCMJ5ihucoNg" type="5010">
+                      <layoutConstraint xmi:type="notation:Location" xmi:id="_LSk98XVKEeyCMJ5ihucoNg" y="5"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_LSllAHVKEeyCMJ5ihucoNg" type="3002" element="_LSQ04XVKEeyCMJ5ihucoNg">
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_LSllAXVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSllAnVKEeyCMJ5ihucoNg"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_LSkW4XVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSkW4nVKEeyCMJ5ihucoNg" x="-2" width="10" height="10"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_MpwzUHVKEeyCMJ5ihucoNg" type="3012" element="_MpY_4nVKEeyCMJ5ihucoNg">
+                    <children xmi:type="notation:Node" xmi:id="_MpxaYHVKEeyCMJ5ihucoNg" type="5010">
+                      <layoutConstraint xmi:type="notation:Location" xmi:id="_MpxaYXVKEeyCMJ5ihucoNg" y="5"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_MpyogHVKEeyCMJ5ihucoNg" type="3002" element="_MpZm8HVKEeyCMJ5ihucoNg">
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_MpyogXVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpyognVKEeyCMJ5ihucoNg"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_MpwzUXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpwzUnVKEeyCMJ5ihucoNg" x="-2" y="24" width="10" height="10"/>
+                  </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_kxyYsXVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kxyYsnVJEeyCMJ5ihucoNg" x="102" y="101"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kxyYsnVJEeyCMJ5ihucoNg" x="102" y="53"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_kx1cAHVJEeyCMJ5ihucoNg" type="3008" element="_kxIRYXVJEeyCMJ5ihucoNg">
                   <children xmi:type="notation:Node" xmi:id="_kx2DEHVJEeyCMJ5ihucoNg" type="5005"/>
@@ -1112,7 +1297,7 @@
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kx6UgnVJEeyCMJ5ihucoNg" x="36" y="-2" width="10" height="10"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_kx1cAXVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kx1cAnVJEeyCMJ5ihucoNg" x="102" y="245"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kx1cAnVJEeyCMJ5ihucoNg" x="270" y="137"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_kx3RMHVJEeyCMJ5ihucoNg" type="3008" element="_kxKGkHVJEeyCMJ5ihucoNg">
                   <children xmi:type="notation:Node" xmi:id="_kx34QHVJEeyCMJ5ihucoNg" type="5005"/>
@@ -1143,7 +1328,47 @@
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kx-l8nVJEeyCMJ5ihucoNg" x="-2" y="12" width="10" height="10"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_kx3RMXVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kx3RMnVJEeyCMJ5ihucoNg" x="294" y="245"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kx3RMnVJEeyCMJ5ihucoNg" x="234" y="209"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_BBIjUHVKEeyCMJ5ihucoNg" type="3008" element="_BAzMJHVKEeyCMJ5ihucoNg">
+                  <children xmi:type="notation:Node" xmi:id="_BBJKYHVKEeyCMJ5ihucoNg" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_BBJKYXVKEeyCMJ5ihucoNg" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_BBJKYnVKEeyCMJ5ihucoNg"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_BBJKY3VKEeyCMJ5ihucoNg"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_LSmMEHVKEeyCMJ5ihucoNg" type="3012" element="_LST4MHVKEeyCMJ5ihucoNg">
+                    <children xmi:type="notation:Node" xmi:id="_LSmzIHVKEeyCMJ5ihucoNg" type="5010">
+                      <layoutConstraint xmi:type="notation:Location" xmi:id="_LSmzIXVKEeyCMJ5ihucoNg" y="5"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_LSoBQHVKEeyCMJ5ihucoNg" type="3002" element="_LST4MXVKEeyCMJ5ihucoNg">
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_LSoBQXVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSoBQnVKEeyCMJ5ihucoNg"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_LSmMEXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSmMEnVKEeyCMJ5ihucoNg" x="-2" width="10" height="10"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_BBIjUXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BBIjUnVKEeyCMJ5ihucoNg" x="222" y="41"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_H-8qAHVKEeyCMJ5ihucoNg" type="3008" element="_H-wcwHVKEeyCMJ5ihucoNg">
+                  <children xmi:type="notation:Node" xmi:id="_H-94IHVKEeyCMJ5ihucoNg" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_H-94IXVKEeyCMJ5ihucoNg" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_H-94InVKEeyCMJ5ihucoNg"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_H-94I3VKEeyCMJ5ihucoNg"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_MpzPkHVKEeyCMJ5ihucoNg" type="3012" element="_MpcqQHVKEeyCMJ5ihucoNg">
+                    <children xmi:type="notation:Node" xmi:id="_MpzPk3VKEeyCMJ5ihucoNg" type="5010">
+                      <layoutConstraint xmi:type="notation:Location" xmi:id="_MpzPlHVKEeyCMJ5ihucoNg" y="5"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_Mpz2oHVKEeyCMJ5ihucoNg" type="3002" element="_MpcqQXVKEeyCMJ5ihucoNg">
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_Mpz2oXVKEeyCMJ5ihucoNg" fontName="Segoe UI"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mpz2onVKEeyCMJ5ihucoNg"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_MpzPkXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MpzPknVKEeyCMJ5ihucoNg" x="-2" width="10" height="10"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_H-8qAXVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H-8qAnVKEeyCMJ5ihucoNg" x="180" y="125"/>
                 </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_kxrD8nVJEeyCMJ5ihucoNg"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_kxrD83VJEeyCMJ5ihucoNg"/>
@@ -1264,49 +1489,49 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_kyI-AXVJEeyCMJ5ihucoNg" type="4001" element="_kxW64HVJEeyCMJ5ihucoNg" source="_kxtgMHVJEeyCMJ5ihucoNg" target="_kx4fUHVJEeyCMJ5ihucoNg">
           <children xmi:type="notation:Node" xmi:id="_kyJlEHVJEeyCMJ5ihucoNg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyJlEXVJEeyCMJ5ihucoNg" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyJlEXVJEeyCMJ5ihucoNg" x="1" y="-11"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kyJlEnVJEeyCMJ5ihucoNg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyJlE3VJEeyCMJ5ihucoNg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyJlE3VJEeyCMJ5ihucoNg" x="-3" y="9"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kyJlFHVJEeyCMJ5ihucoNg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyJlFXVJEeyCMJ5ihucoNg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyJlFXVJEeyCMJ5ihucoNg" y="9"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_kyI-AnVJEeyCMJ5ihucoNg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_kyI-A3VJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kyI-BHVJEeyCMJ5ihucoNg" points="[0, 0, 108, 20]$[-108, -20, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kyI-BHVJEeyCMJ5ihucoNg" points="[4, -5, -104, 115]$[103, -115, -5, 5]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kyKMIHVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kyKMIXVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_kyKzMHVJEeyCMJ5ihucoNg" type="4001" element="_kxYJAHVJEeyCMJ5ihucoNg" source="_kx-l8HVJEeyCMJ5ihucoNg" target="_kxwjgHVJEeyCMJ5ihucoNg">
           <children xmi:type="notation:Node" xmi:id="_kyKzNHVJEeyCMJ5ihucoNg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyKzNXVJEeyCMJ5ihucoNg" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyKzNXVJEeyCMJ5ihucoNg" x="5" y="-7"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kyLaQHVJEeyCMJ5ihucoNg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyLaQXVJEeyCMJ5ihucoNg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyLaQXVJEeyCMJ5ihucoNg" x="-2" y="12"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kyLaQnVJEeyCMJ5ihucoNg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyLaQ3VJEeyCMJ5ihucoNg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyLaQ3VJEeyCMJ5ihucoNg" x="-2" y="11"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_kyKzMXVJEeyCMJ5ihucoNg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_kyKzMnVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kyKzM3VJEeyCMJ5ihucoNg" points="[0, 0, 300, -4]$[-300, 4, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kyKzM3VJEeyCMJ5ihucoNg" points="[-5, 0, 235, -37]$[-235, 36, 5, -1]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kyMBUHVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kyMBUXVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_kyMBUnVJEeyCMJ5ihucoNg" type="4001" element="_kxYwEnVJEeyCMJ5ihucoNg" source="_kx6UgHVJEeyCMJ5ihucoNg" target="_kx9X0HVJEeyCMJ5ihucoNg">
           <children xmi:type="notation:Node" xmi:id="_kyMoYHVJEeyCMJ5ihucoNg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyMoYXVJEeyCMJ5ihucoNg" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyMoYXVJEeyCMJ5ihucoNg" x="-8" y="3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kyMoYnVJEeyCMJ5ihucoNg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyMoY3VJEeyCMJ5ihucoNg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyMoY3VJEeyCMJ5ihucoNg" x="8" y="1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kyMoZHVJEeyCMJ5ihucoNg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyMoZXVJEeyCMJ5ihucoNg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kyMoZXVJEeyCMJ5ihucoNg" x="9" y="1"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_kyMBU3VJEeyCMJ5ihucoNg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_kyMBVHVJEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kyMBVXVJEeyCMJ5ihucoNg" points="[0, 0, -158, 0]$[158, 0, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kyMBVXVJEeyCMJ5ihucoNg" points="[-5, 5, 69, -69]$[-69, 69, 5, -5]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kyNPcHVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kyNPcXVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
         </edges>
@@ -1341,6 +1566,38 @@
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kyRg43VJEeyCMJ5ihucoNg" points="[0, 0, 108, 131]$[-108, -131, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kySvAXVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kyTWEHVJEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_LSp2cHVKEeyCMJ5ihucoNg" type="4001" element="_LSZ-1HVKEeyCMJ5ihucoNg" source="_LSkW4HVKEeyCMJ5ihucoNg" target="_LSmMEHVKEeyCMJ5ihucoNg">
+          <children xmi:type="notation:Node" xmi:id="_LSqdgHVKEeyCMJ5ihucoNg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSqdgXVKEeyCMJ5ihucoNg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LSqdgnVKEeyCMJ5ihucoNg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSqdg3VKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LSqdhHVKEeyCMJ5ihucoNg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LSqdhXVKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_LSp2cXVKEeyCMJ5ihucoNg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_LSp2cnVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LSp2c3VKEeyCMJ5ihucoNg" points="[5, -1, -115, 11]$[115, -12, -5, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LSrEkHVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LSrEkXVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Mp1r0HVKEeyCMJ5ihucoNg" type="4001" element="_MphiwnVKEeyCMJ5ihucoNg" source="_MpwzUHVKEeyCMJ5ihucoNg" target="_MpzPkHVKEeyCMJ5ihucoNg">
+          <children xmi:type="notation:Node" xmi:id="_Mp1r1HVKEeyCMJ5ihucoNg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mp1r1XVKEeyCMJ5ihucoNg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mp1r1nVKEeyCMJ5ihucoNg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mp1r13VKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mp1r2HVKEeyCMJ5ihucoNg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mp1r2XVKEeyCMJ5ihucoNg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Mp1r0XVKEeyCMJ5ihucoNg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Mp1r0nVKEeyCMJ5ihucoNg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mp1r03VKEeyCMJ5ihucoNg" points="[5, 3, -73, -45]$[73, 44, -5, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mp2S4HVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mp2S4XVKEeyCMJ5ihucoNg" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -1441,6 +1698,25 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']"/>
           </ownedBorderedNodes>
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_LSQ04HVKEeyCMJ5ihucoNg" tooltipText="deliverable/source" outgoingEdges="_LSZ-1HVKEeyCMJ5ihucoNg" width="1" height="1">
+            <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+            <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_LSQ04XVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+              <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']"/>
+          </ownedBorderedNodes>
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_MpY_4nVKEeyCMJ5ihucoNg" tooltipText="deliverable/source" outgoingEdges="_MphiwnVKEeyCMJ5ihucoNg" width="1" height="1">
+            <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+            <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_MpZm8HVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+              <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_kxHqUXVJEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
             <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
           </ownedStyle>
@@ -1457,6 +1733,9 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']"/>
           </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_kxI4cHVJEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
             <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
           </ownedStyle>
@@ -1481,7 +1760,45 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']"/>
           </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_kxKGkXVJEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_BAzMJHVKEeyCMJ5ihucoNg" name="SW design">
+          <target xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.3"/>
+          <semanticElements xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.3"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_LST4MHVKEeyCMJ5ihucoNg" tooltipText="prerequisite/destination" incomingEdges="_LSZ-1HVKEeyCMJ5ihucoNg" width="1" height="1">
+            <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+            <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_LST4MXVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+              <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_BAzMJXVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_H-wcwHVKEeyCMJ5ihucoNg" name="HW design">
+          <target xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.4"/>
+          <semanticElements xmi:type="PROVE:Process" href="PROVEdemo.prove#//@process.0/@process.0/@process.4"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_MpcqQHVKEeyCMJ5ihucoNg" tooltipText="prerequisite/destination" incomingEdges="_MphiwnVKEeyCMJ5ihucoNg" width="1" height="1">
+            <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+            <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_MpcqQXVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" labelPosition="node" strokeSizeComputationExpression="1">
+              <description xmi:type="style:DotDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort']"/>
+          </ownedBorderedNodes>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_H-wcwXVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
             <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
@@ -1539,6 +1856,24 @@
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_kxbMUHVJEeyCMJ5ihucoNg" size="2" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_kxbMUXVJEeyCMJ5ihucoNg" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_LSZ-1HVKEeyCMJ5ihucoNg" name="SWreq::undefined" sourceNode="_LSQ04HVKEeyCMJ5ihucoNg" targetNode="_LST4MHVKEeyCMJ5ihucoNg">
+      <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+      <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.4/@state.0/@artifactstateinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_LSal4HVKEeyCMJ5ihucoNg" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_LSal4XVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_MphiwnVKEeyCMJ5ihucoNg" name="HWreq::undefined" sourceNode="_MpY_4nVKEeyCMJ5ihucoNg" targetNode="_MpcqQHVKEeyCMJ5ihucoNg">
+      <target xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+      <semanticElements xmi:type="PROVE:ArtifactStateInstance" href="PROVEdemo.prove#//@artifact.5/@state.0/@artifactstateinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mphiw3VKEeyCMJ5ihucoNg" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_MphixHVKEeyCMJ5ihucoNg" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@edgeMappings[name='ArtifactInStateFlow']"/>
     </ownedDiagramElements>

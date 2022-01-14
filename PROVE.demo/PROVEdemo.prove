@@ -36,11 +36,23 @@
       <artifactstateinstance usedByActivity="//@process.0/@process.1" originatingActivity="//@process.0/@process.0"/>
     </state>
   </artifact>
+  <artifact name="SWreq">
+    <state artifactName="SWreq" name="undefined">
+      <artifactstateinstance usedByActivity="//@process.0/@process.0/@process.3" originatingActivity="//@process.0/@process.0/@process.0"/>
+    </state>
+  </artifact>
+  <artifact name="HWreq">
+    <state artifactName="HWreq" name="undefined">
+      <artifactstateinstance usedByActivity="//@process.0/@process.0/@process.4" originatingActivity="//@process.0/@process.0/@process.0"/>
+    </state>
+  </artifact>
   <process name="Project" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.0 //@artifact.1/@state.0/@artifactstateinstance.0 //@artifact.3/@state.0/@artifactstateinstance.0 //@artifact.2/@state.1/@artifactstateinstance.1" resultArtifactInState="//@artifact.2/@state.0/@artifactstateinstance.0 //@artifact.2/@state.1/@artifactstateinstance.0 //@artifact.3/@state.0/@artifactstateinstance.1 //@artifact.0/@state.0/@artifactstateinstance.1">
     <process name="Sys Dev" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.1 //@artifact.2/@state.0/@artifactstateinstance.1" resultArtifactInState="//@artifact.3/@state.0/@artifactstateinstance.0 //@artifact.3/@state.0/@artifactstateinstance.2 //@artifact.0/@state.0/@artifactstateinstance.2">
-      <process name="Req Def" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.2"/>
+      <process name="Req Def" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.2" resultArtifactInState="//@artifact.4/@state.0/@artifactstateinstance.0 //@artifact.5/@state.0/@artifactstateinstance.0"/>
       <process name="Sys Int &amp; Test" resultArtifactInState="//@artifact.2/@state.2/@artifactstateinstance.0"/>
       <process name="Sys Field Testing" artifactInStateUsed="//@artifact.2/@state.2/@artifactstateinstance.0" resultArtifactInState="//@artifact.2/@state.0/@artifactstateinstance.1"/>
+      <process name="SW design" artifactInStateUsed="//@artifact.4/@state.0/@artifactstateinstance.0"/>
+      <process name="HW design" artifactInStateUsed="//@artifact.5/@state.0/@artifactstateinstance.0"/>
     </process>
     <process name="Sys Cert" artifactInStateUsed="//@artifact.3/@state.0/@artifactstateinstance.2 //@artifact.2/@state.1/@artifactstateinstance.2" resultArtifactInState="//@artifact.2/@state.1/@artifactstateinstance.1 //@artifact.2/@state.3/@artifactstateinstance.0">
       <process name="CertifySWDesign" artifactInStateUsed="//@artifact.2/@state.3/@artifactstateinstance.0" resultArtifactInState="//@artifact.2/@state.1/@artifactstateinstance.2"/>
