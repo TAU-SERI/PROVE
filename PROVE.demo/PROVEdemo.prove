@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<PROVE:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:PROVE="dsm.PROVE" name="Demo" artifactInStateUsed="//@artifact.2/@state.0/@artifactstateinstance.0 //@artifact.2/@state.1/@artifactstateinstance.0 //@artifact.3/@state.0/@artifactstateinstance.1" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.0 //@artifact.1/@state.0/@artifactstateinstance.0">
+  <artifact name="CustomerRequirements">
+    <state artifactName="CustomerRequirements" name="Released">
+      <artifactstateinstance usedByActivity="//@process.0" originatingActivity="/"/>
+      <artifactstateinstance usedByActivity="//@process.0/@process.0" originatingActivity="//@process.0"/>
+      <artifactstateinstance usedByActivity="//@process.0/@process.0/@process.0" originatingActivity="//@process.0/@process.0"/>
+    </state>
+  </artifact>
+  <artifact name="ICD">
+    <state artifactName="ICD" name="Delivered">
+      <artifactstateinstance usedByActivity="//@process.0" originatingActivity="/"/>
+    </state>
+  </artifact>
+  <artifact name="System">
+    <state artifactName="System" name="Validated">
+      <artifactstateinstance usedByActivity="/" originatingActivity="//@process.0"/>
+      <artifactstateinstance usedByActivity="//@process.0/@process.0" originatingActivity="//@process.0/@process.0/@process.2"/>
+    </state>
+    <state artifactName="System" name="Certified">
+      <artifactstateinstance usedByActivity="/" originatingActivity="//@process.0"/>
+      <artifactstateinstance usedByActivity="//@process.0" originatingActivity="//@process.0/@process.1"/>
+      <artifactstateinstance usedByActivity="//@process.0/@process.1" originatingActivity="//@process.0/@process.1/@process.0"/>
+    </state>
+    <state artifactName="System" name="Tested">
+      <artifactstateinstance usedByActivity="//@process.0/@process.0/@process.2" originatingActivity="//@process.0/@process.0/@process.1"/>
+    </state>
+    <state artifactName="System" name="Designed">
+      <artifactstateinstance usedByActivity="//@process.0/@process.1/@process.0" originatingActivity="//@process.0/@process.1"/>
+    </state>
+  </artifact>
+  <artifact name="DesignDescription">
+    <state achievedStatus="true" artifactName="DesignDescription" name="Released">
+      <artifactstateinstance usedByActivity="//@process.0" originatingActivity="//@process.0/@process.0"/>
+      <artifactstateinstance usedByActivity="/" originatingActivity="//@process.0"/>
+      <artifactstateinstance usedByActivity="//@process.0/@process.1" originatingActivity="//@process.0/@process.0"/>
+    </state>
+  </artifact>
+  <process name="Project" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.0 //@artifact.1/@state.0/@artifactstateinstance.0 //@artifact.3/@state.0/@artifactstateinstance.0 //@artifact.2/@state.1/@artifactstateinstance.1" resultArtifactInState="//@artifact.2/@state.0/@artifactstateinstance.0 //@artifact.2/@state.1/@artifactstateinstance.0 //@artifact.3/@state.0/@artifactstateinstance.1 //@artifact.0/@state.0/@artifactstateinstance.1">
+    <process name="Sys Dev" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.1 //@artifact.2/@state.0/@artifactstateinstance.1" resultArtifactInState="//@artifact.3/@state.0/@artifactstateinstance.0 //@artifact.3/@state.0/@artifactstateinstance.2 //@artifact.0/@state.0/@artifactstateinstance.2">
+      <process name="Req Def" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.2"/>
+      <process name="Sys Int &amp; Test" resultArtifactInState="//@artifact.2/@state.2/@artifactstateinstance.0"/>
+      <process name="Sys Field Testing" artifactInStateUsed="//@artifact.2/@state.2/@artifactstateinstance.0" resultArtifactInState="//@artifact.2/@state.0/@artifactstateinstance.1"/>
+    </process>
+    <process name="Sys Cert" artifactInStateUsed="//@artifact.3/@state.0/@artifactstateinstance.2 //@artifact.2/@state.1/@artifactstateinstance.2" resultArtifactInState="//@artifact.2/@state.1/@artifactstateinstance.1 //@artifact.2/@state.3/@artifactstateinstance.0">
+      <process name="CertifySWDesign" artifactInStateUsed="//@artifact.2/@state.3/@artifactstateinstance.0" resultArtifactInState="//@artifact.2/@state.1/@artifactstateinstance.2"/>
+    </process>
+  </process>
+</PROVE:Process>
