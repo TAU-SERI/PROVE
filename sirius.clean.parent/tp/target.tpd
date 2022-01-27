@@ -11,6 +11,7 @@ location "https://download.eclipse.org/releases/2020-06/" {
 	org.eclipse.equinox.executable.feature.group lazy
 	org.eclipse.equinox.core.feature.feature.group lazy	
 	org.eclipse.egit.feature.group lazy	
+	org.eclipse.jgit.feature.group lazy
 }
 
 

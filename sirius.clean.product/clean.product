@@ -41,6 +41,7 @@ Developer/issuer is not responsible/liable for anything
       <feature id="org.eclipse.platform" installMode="root"/>
       <feature id="TRADES.feature" installMode="root"/>
       <feature id="PROVE.feature" installMode="root"/>
+      <feature id="org.eclipse.egit" installMode="root"/>
    </features>
 
    <configurations>

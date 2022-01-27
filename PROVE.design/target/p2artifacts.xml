@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='osgi.bundle' id='PROVE.design' version='1.0.0.202201271720'>
+  <artifact classifier='osgi.bundle' id='PROVE.design' version='1.0.0.202201271905'>
     <properties size='5'>
       <property name='artifact.size' value='321663'/>
       <property name='download.size' value='321663'/>

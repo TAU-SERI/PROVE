@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: dsm.PROVE.edit;singleton:=true
 Automatic-Module-Name: dsm.PROVE.edit
-Bundle-Version: 1.0.0.202201271720
+Bundle-Version: 1.0.0.202201271905
 Bundle-ClassPath: .
 Bundle-Activator: dsm.PROVE.provider.PROVEEditPlugin$Implementation
 Bundle-Vendor: %providerName
