@@ -7,6 +7,7 @@ import dsm.PROVE.ArtifactState;
 import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEFactory;
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.Resource;
 import dsm.PROVE.ShadowNodeIncoming;
 import dsm.PROVE.ShadowNodeOutgoing;
 import dsm.PROVE.ShadowNodeTypeENUM;
@@ -67,6 +68,13 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 	 * @generated
 	 */
 	private EClass artifactStateInstanceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass resourceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,6 +323,46 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getProcess_StartDate() {
+		return (EAttribute) processEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProcess_EndDate() {
+		return (EAttribute) processEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProcess_Resource() {
+		return (EReference) processEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProcess_ResourceUsed() {
+		return (EReference) processEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getShadowNodeIncoming() {
 		return shadowNodeIncomingEClass;
 	}
@@ -357,6 +405,36 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 	@Override
 	public EReference getArtifactStateInstance_OriginatingActivity() {
 		return (EReference) artifactStateInstanceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getResource() {
+		return resourceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getResource_Name() {
+		return (EAttribute) resourceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getResource_Resource() {
+		return (EReference) resourceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -418,6 +496,10 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		createEReference(processEClass, PROCESS__RESULT_ARTIFACT_IN_STATE);
 		createEReference(processEClass, PROCESS__SHADOWNODEINCOMING);
 		createEReference(processEClass, PROCESS__SHADOWNODEOUTGOING);
+		createEAttribute(processEClass, PROCESS__START_DATE);
+		createEAttribute(processEClass, PROCESS__END_DATE);
+		createEReference(processEClass, PROCESS__RESOURCE);
+		createEReference(processEClass, PROCESS__RESOURCE_USED);
 
 		shadowNodeIncomingEClass = createEClass(SHADOW_NODE_INCOMING);
 
@@ -426,6 +508,10 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		artifactStateInstanceEClass = createEClass(ARTIFACT_STATE_INSTANCE);
 		createEReference(artifactStateInstanceEClass, ARTIFACT_STATE_INSTANCE__USED_BY_ACTIVITY);
 		createEReference(artifactStateInstanceEClass, ARTIFACT_STATE_INSTANCE__ORIGINATING_ACTIVITY);
+
+		resourceEClass = createEClass(RESOURCE);
+		createEAttribute(resourceEClass, RESOURCE__NAME);
+		createEReference(resourceEClass, RESOURCE__RESOURCE);
 
 		// Create enums
 		shadowNodeTypeENUMEEnum = createEEnum(SHADOW_NODE_TYPE_ENUM);
@@ -512,6 +598,17 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		initEReference(getProcess_Shadownodeoutgoing(), this.getShadowNodeOutgoing(), null, "shadownodeoutgoing", null,
 				0, 1, dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcess_StartDate(), ecorePackage.getEDate(), "startDate", null, 0, 1,
+				dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcess_EndDate(), ecorePackage.getEDate(), "endDate", null, 0, 1, dsm.PROVE.Process.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProcess_Resource(), this.getResource(), null, "resource", null, 0, -1,
+				dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProcess_ResourceUsed(), this.getResource(), null, "resourceUsed", null, 0, -1,
+				dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shadowNodeIncomingEClass, ShadowNodeIncoming.class, "ShadowNodeIncoming", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -528,6 +625,14 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		initEReference(getArtifactStateInstance_OriginatingActivity(), this.getProcess(),
 				this.getProcess_ResultArtifactInState(), "originatingActivity", null, 0, 1, ArtifactStateInstance.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(resourceEClass, Resource.class, "Resource", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getResource_Name(), ecorePackage.getEString(), "name", null, 0, 1, Resource.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getResource_Resource(), this.getResource(), null, "resource", null, 0, -1, Resource.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals

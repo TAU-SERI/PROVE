@@ -34,12 +34,20 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/resultArtifactInState"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/shadownodeincoming"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/shadownodeoutgoing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Process/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Process/endDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/resource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/resourceUsed"/>
     </genClasses>
     <genClasses ecoreClass="PROVE.ecore#//ShadowNodeIncoming"/>
     <genClasses ecoreClass="PROVE.ecore#//ShadowNodeOutgoing"/>
     <genClasses ecoreClass="PROVE.ecore#//ArtifactStateInstance">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//ArtifactStateInstance/usedByActivity"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//ArtifactStateInstance/originatingActivity"/>
+    </genClasses>
+    <genClasses ecoreClass="PROVE.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Resource/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Resource/resource"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

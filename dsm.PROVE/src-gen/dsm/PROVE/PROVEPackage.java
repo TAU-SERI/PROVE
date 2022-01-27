@@ -250,13 +250,49 @@ public interface PROVEPackage extends EPackage {
 	int PROCESS__SHADOWNODEOUTGOING = 7;
 
 	/**
+	 * The feature id for the '<em><b>Start Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS__START_DATE = 8;
+
+	/**
+	 * The feature id for the '<em><b>End Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS__END_DATE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Resource</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS__RESOURCE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Resource Used</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS__RESOURCE_USED = 11;
+
+	/**
 	 * The number of structural features of the '<em>Process</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCESS_FEATURE_COUNT = 8;
+	int PROCESS_FEATURE_COUNT = 12;
 
 	/**
 	 * The number of operations of the '<em>Process</em>' class.
@@ -348,6 +384,42 @@ public interface PROVEPackage extends EPackage {
 	 * @ordered
 	 */
 	int SHADOW_NODE_INCOMING__SHADOWNODEOUTGOING = PROCESS__SHADOWNODEOUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Start Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_INCOMING__START_DATE = PROCESS__START_DATE;
+
+	/**
+	 * The feature id for the '<em><b>End Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_INCOMING__END_DATE = PROCESS__END_DATE;
+
+	/**
+	 * The feature id for the '<em><b>Resource</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_INCOMING__RESOURCE = PROCESS__RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Resource Used</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_INCOMING__RESOURCE_USED = PROCESS__RESOURCE_USED;
 
 	/**
 	 * The number of structural features of the '<em>Shadow Node Incoming</em>' class.
@@ -450,6 +522,42 @@ public interface PROVEPackage extends EPackage {
 	int SHADOW_NODE_OUTGOING__SHADOWNODEOUTGOING = PROCESS__SHADOWNODEOUTGOING;
 
 	/**
+	 * The feature id for the '<em><b>Start Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_OUTGOING__START_DATE = PROCESS__START_DATE;
+
+	/**
+	 * The feature id for the '<em><b>End Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_OUTGOING__END_DATE = PROCESS__END_DATE;
+
+	/**
+	 * The feature id for the '<em><b>Resource</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_OUTGOING__RESOURCE = PROCESS__RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Resource Used</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_OUTGOING__RESOURCE_USED = PROCESS__RESOURCE_USED;
+
+	/**
 	 * The number of structural features of the '<em>Shadow Node Outgoing</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -514,6 +622,52 @@ public interface PROVEPackage extends EPackage {
 	int ARTIFACT_STATE_INSTANCE_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link dsm.PROVE.impl.ResourceImpl <em>Resource</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see dsm.PROVE.impl.ResourceImpl
+	 * @see dsm.PROVE.impl.PROVEPackageImpl#getResource()
+	 * @generated
+	 */
+	int RESOURCE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Resource</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__RESOURCE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Resource</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Resource</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link dsm.PROVE.ShadowNodeTypeENUM <em>Shadow Node Type ENUM</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -521,7 +675,7 @@ public interface PROVEPackage extends EPackage {
 	 * @see dsm.PROVE.impl.PROVEPackageImpl#getShadowNodeTypeENUM()
 	 * @generated
 	 */
-	int SHADOW_NODE_TYPE_ENUM = 6;
+	int SHADOW_NODE_TYPE_ENUM = 7;
 
 	/**
 	 * Returns the meta object for class '{@link dsm.PROVE.Artifact <em>Artifact</em>}'.
@@ -708,6 +862,50 @@ public interface PROVEPackage extends EPackage {
 	EReference getProcess_Shadownodeoutgoing();
 
 	/**
+	 * Returns the meta object for the attribute '{@link dsm.PROVE.Process#getStartDate <em>Start Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Start Date</em>'.
+	 * @see dsm.PROVE.Process#getStartDate()
+	 * @see #getProcess()
+	 * @generated
+	 */
+	EAttribute getProcess_StartDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link dsm.PROVE.Process#getEndDate <em>End Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>End Date</em>'.
+	 * @see dsm.PROVE.Process#getEndDate()
+	 * @see #getProcess()
+	 * @generated
+	 */
+	EAttribute getProcess_EndDate();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link dsm.PROVE.Process#getResource <em>Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Resource</em>'.
+	 * @see dsm.PROVE.Process#getResource()
+	 * @see #getProcess()
+	 * @generated
+	 */
+	EReference getProcess_Resource();
+
+	/**
+	 * Returns the meta object for the reference list '{@link dsm.PROVE.Process#getResourceUsed <em>Resource Used</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Resource Used</em>'.
+	 * @see dsm.PROVE.Process#getResourceUsed()
+	 * @see #getProcess()
+	 * @generated
+	 */
+	EReference getProcess_ResourceUsed();
+
+	/**
 	 * Returns the meta object for class '{@link dsm.PROVE.ShadowNodeIncoming <em>Shadow Node Incoming</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -758,6 +956,38 @@ public interface PROVEPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getArtifactStateInstance_OriginatingActivity();
+
+	/**
+	 * Returns the meta object for class '{@link dsm.PROVE.Resource <em>Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Resource</em>'.
+	 * @see dsm.PROVE.Resource
+	 * @generated
+	 */
+	EClass getResource();
+
+	/**
+	 * Returns the meta object for the attribute '{@link dsm.PROVE.Resource#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see dsm.PROVE.Resource#getName()
+	 * @see #getResource()
+	 * @generated
+	 */
+	EAttribute getResource_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link dsm.PROVE.Resource#getResource <em>Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Resource</em>'.
+	 * @see dsm.PROVE.Resource#getResource()
+	 * @see #getResource()
+	 * @generated
+	 */
+	EReference getResource_Resource();
 
 	/**
 	 * Returns the meta object for enum '{@link dsm.PROVE.ShadowNodeTypeENUM <em>Shadow Node Type ENUM</em>}'.
@@ -935,6 +1165,38 @@ public interface PROVEPackage extends EPackage {
 		EReference PROCESS__SHADOWNODEOUTGOING = eINSTANCE.getProcess_Shadownodeoutgoing();
 
 		/**
+		 * The meta object literal for the '<em><b>Start Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESS__START_DATE = eINSTANCE.getProcess_StartDate();
+
+		/**
+		 * The meta object literal for the '<em><b>End Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESS__END_DATE = eINSTANCE.getProcess_EndDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROCESS__RESOURCE = eINSTANCE.getProcess_Resource();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource Used</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROCESS__RESOURCE_USED = eINSTANCE.getProcess_ResourceUsed();
+
+		/**
 		 * The meta object literal for the '{@link dsm.PROVE.impl.ShadowNodeIncomingImpl <em>Shadow Node Incoming</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -980,6 +1242,32 @@ public interface PROVEPackage extends EPackage {
 		 */
 		EReference ARTIFACT_STATE_INSTANCE__ORIGINATING_ACTIVITY = eINSTANCE
 				.getArtifactStateInstance_OriginatingActivity();
+
+		/**
+		 * The meta object literal for the '{@link dsm.PROVE.impl.ResourceImpl <em>Resource</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see dsm.PROVE.impl.ResourceImpl
+		 * @see dsm.PROVE.impl.PROVEPackageImpl#getResource()
+		 * @generated
+		 */
+		EClass RESOURCE = eINSTANCE.getResource();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE__NAME = eINSTANCE.getResource_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RESOURCE__RESOURCE = eINSTANCE.getResource_Resource();
 
 		/**
 		 * The meta object literal for the '{@link dsm.PROVE.ShadowNodeTypeENUM <em>Shadow Node Type ENUM</em>}' enum.

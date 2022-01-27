@@ -5,11 +5,13 @@ package dsm.PROVE.impl;
 import dsm.PROVE.Artifact;
 import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.Resource;
 import dsm.PROVE.ShadowNodeIncoming;
 import dsm.PROVE.ShadowNodeOutgoing;
 
 import java.util.Collection;
 
+import java.util.Date;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -22,6 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -41,6 +44,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getResultArtifactInState <em>Result Artifact In State</em>}</li>
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getShadownodeincoming <em>Shadownodeincoming</em>}</li>
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getShadownodeoutgoing <em>Shadownodeoutgoing</em>}</li>
+ *   <li>{@link dsm.PROVE.impl.ProcessImpl#getStartDate <em>Start Date</em>}</li>
+ *   <li>{@link dsm.PROVE.impl.ProcessImpl#getEndDate <em>End Date</em>}</li>
+ *   <li>{@link dsm.PROVE.impl.ProcessImpl#getResource <em>Resource</em>}</li>
+ *   <li>{@link dsm.PROVE.impl.ProcessImpl#getResourceUsed <em>Resource Used</em>}</li>
  * </ul>
  *
  * @generated
@@ -145,6 +152,66 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	 * @ordered
 	 */
 	protected ShadowNodeOutgoing shadownodeoutgoing;
+
+	/**
+	 * The default value of the '{@link #getStartDate() <em>Start Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStartDate()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Date START_DATE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getStartDate() <em>Start Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStartDate()
+	 * @generated
+	 * @ordered
+	 */
+	protected Date startDate = START_DATE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getEndDate() <em>End Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEndDate()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Date END_DATE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getEndDate() <em>End Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEndDate()
+	 * @generated
+	 * @ordered
+	 */
+	protected Date endDate = END_DATE_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getResource() <em>Resource</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResource()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Resource> resource;
+
+	/**
+	 * The cached value of the '{@link #getResourceUsed() <em>Resource Used</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResourceUsed()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Resource> resourceUsed;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,6 +400,80 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public Date getStartDate() {
+		return startDate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStartDate(Date newStartDate) {
+		Date oldStartDate = startDate;
+		startDate = newStartDate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PROVEPackage.PROCESS__START_DATE, oldStartDate,
+					startDate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getEndDate() {
+		return endDate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEndDate(Date newEndDate) {
+		Date oldEndDate = endDate;
+		endDate = newEndDate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PROVEPackage.PROCESS__END_DATE, oldEndDate, endDate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<Resource> getResource() {
+		if (resource == null) {
+			resource = new EObjectContainmentEList<Resource>(Resource.class, this, PROVEPackage.PROCESS__RESOURCE);
+		}
+		return resource;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<Resource> getResourceUsed() {
+		if (resourceUsed == null) {
+			resourceUsed = new EObjectResolvingEList<Resource>(Resource.class, this,
+					PROVEPackage.PROCESS__RESOURCE_USED);
+		}
+		return resourceUsed;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -367,6 +508,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			return basicSetShadownodeincoming(null, msgs);
 		case PROVEPackage.PROCESS__SHADOWNODEOUTGOING:
 			return basicSetShadownodeoutgoing(null, msgs);
+		case PROVEPackage.PROCESS__RESOURCE:
+			return ((InternalEList<?>) getResource()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -395,6 +538,14 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			return getShadownodeincoming();
 		case PROVEPackage.PROCESS__SHADOWNODEOUTGOING:
 			return getShadownodeoutgoing();
+		case PROVEPackage.PROCESS__START_DATE:
+			return getStartDate();
+		case PROVEPackage.PROCESS__END_DATE:
+			return getEndDate();
+		case PROVEPackage.PROCESS__RESOURCE:
+			return getResource();
+		case PROVEPackage.PROCESS__RESOURCE_USED:
+			return getResourceUsed();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -430,6 +581,20 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			getResultArtifactInState().clear();
 			getResultArtifactInState().addAll((Collection<? extends ArtifactStateInstance>) newValue);
 			return;
+		case PROVEPackage.PROCESS__START_DATE:
+			setStartDate((Date) newValue);
+			return;
+		case PROVEPackage.PROCESS__END_DATE:
+			setEndDate((Date) newValue);
+			return;
+		case PROVEPackage.PROCESS__RESOURCE:
+			getResource().clear();
+			getResource().addAll((Collection<? extends Resource>) newValue);
+			return;
+		case PROVEPackage.PROCESS__RESOURCE_USED:
+			getResourceUsed().clear();
+			getResourceUsed().addAll((Collection<? extends Resource>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -460,6 +625,18 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		case PROVEPackage.PROCESS__RESULT_ARTIFACT_IN_STATE:
 			getResultArtifactInState().clear();
 			return;
+		case PROVEPackage.PROCESS__START_DATE:
+			setStartDate(START_DATE_EDEFAULT);
+			return;
+		case PROVEPackage.PROCESS__END_DATE:
+			setEndDate(END_DATE_EDEFAULT);
+			return;
+		case PROVEPackage.PROCESS__RESOURCE:
+			getResource().clear();
+			return;
+		case PROVEPackage.PROCESS__RESOURCE_USED:
+			getResourceUsed().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -488,6 +665,14 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			return shadownodeincoming != null;
 		case PROVEPackage.PROCESS__SHADOWNODEOUTGOING:
 			return shadownodeoutgoing != null;
+		case PROVEPackage.PROCESS__START_DATE:
+			return START_DATE_EDEFAULT == null ? startDate != null : !START_DATE_EDEFAULT.equals(startDate);
+		case PROVEPackage.PROCESS__END_DATE:
+			return END_DATE_EDEFAULT == null ? endDate != null : !END_DATE_EDEFAULT.equals(endDate);
+		case PROVEPackage.PROCESS__RESOURCE:
+			return resource != null && !resource.isEmpty();
+		case PROVEPackage.PROCESS__RESOURCE_USED:
+			return resourceUsed != null && !resourceUsed.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -507,6 +692,10 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		result.append(name);
 		result.append(", notes: ");
 		result.append(notes);
+		result.append(", startDate: ");
+		result.append(startDate);
+		result.append(", endDate: ");
+		result.append(endDate);
 		result.append(')');
 		return result.toString();
 	}

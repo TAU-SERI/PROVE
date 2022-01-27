@@ -2,6 +2,7 @@
  */
 package dsm.PROVE;
 
+import java.util.Date;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -23,6 +24,10 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link dsm.PROVE.Process#getResultArtifactInState <em>Result Artifact In State</em>}</li>
  *   <li>{@link dsm.PROVE.Process#getShadownodeincoming <em>Shadownodeincoming</em>}</li>
  *   <li>{@link dsm.PROVE.Process#getShadownodeoutgoing <em>Shadownodeoutgoing</em>}</li>
+ *   <li>{@link dsm.PROVE.Process#getStartDate <em>Start Date</em>}</li>
+ *   <li>{@link dsm.PROVE.Process#getEndDate <em>End Date</em>}</li>
+ *   <li>{@link dsm.PROVE.Process#getResource <em>Resource</em>}</li>
+ *   <li>{@link dsm.PROVE.Process#getResourceUsed <em>Resource Used</em>}</li>
  * </ul>
  *
  * @see dsm.PROVE.PROVEPackage#getProcess()
@@ -147,5 +152,73 @@ public interface Process extends EObject {
 	 * @generated
 	 */
 	ShadowNodeOutgoing getShadownodeoutgoing();
+
+	/**
+	 * Returns the value of the '<em><b>Start Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Start Date</em>' attribute.
+	 * @see #setStartDate(Date)
+	 * @see dsm.PROVE.PROVEPackage#getProcess_StartDate()
+	 * @model
+	 * @generated
+	 */
+	Date getStartDate();
+
+	/**
+	 * Sets the value of the '{@link dsm.PROVE.Process#getStartDate <em>Start Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Start Date</em>' attribute.
+	 * @see #getStartDate()
+	 * @generated
+	 */
+	void setStartDate(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>End Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>End Date</em>' attribute.
+	 * @see #setEndDate(Date)
+	 * @see dsm.PROVE.PROVEPackage#getProcess_EndDate()
+	 * @model
+	 * @generated
+	 */
+	Date getEndDate();
+
+	/**
+	 * Sets the value of the '{@link dsm.PROVE.Process#getEndDate <em>End Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>End Date</em>' attribute.
+	 * @see #getEndDate()
+	 * @generated
+	 */
+	void setEndDate(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>Resource</b></em>' containment reference list.
+	 * The list contents are of type {@link dsm.PROVE.Resource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Resource</em>' containment reference list.
+	 * @see dsm.PROVE.PROVEPackage#getProcess_Resource()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Resource> getResource();
+
+	/**
+	 * Returns the value of the '<em><b>Resource Used</b></em>' reference list.
+	 * The list contents are of type {@link dsm.PROVE.Resource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Resource Used</em>' reference list.
+	 * @see dsm.PROVE.PROVEPackage#getProcess_ResourceUsed()
+	 * @model
+	 * @generated
+	 */
+	EList<Resource> getResourceUsed();
 
 } // Process

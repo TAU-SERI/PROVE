@@ -211,6 +211,29 @@ public class PROVEItemProviderAdapterFactory extends PROVEAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link dsm.PROVE.Resource} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ResourceItemProvider resourceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link dsm.PROVE.Resource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createResourceAdapter() {
+		if (resourceItemProvider == null) {
+			resourceItemProvider = new ResourceItemProvider(this);
+		}
+
+		return resourceItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -327,6 +350,8 @@ public class PROVEItemProviderAdapterFactory extends PROVEAdapterFactory
 			shadowNodeOutgoingItemProvider.dispose();
 		if (artifactStateInstanceItemProvider != null)
 			artifactStateInstanceItemProvider.dispose();
+		if (resourceItemProvider != null)
+			resourceItemProvider.dispose();
 	}
 
 }

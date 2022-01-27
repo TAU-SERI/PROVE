@@ -6,6 +6,7 @@ import dsm.PROVE.Artifact;
 import dsm.PROVE.ArtifactState;
 import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.Resource;
 import dsm.PROVE.ShadowNodeIncoming;
 import dsm.PROVE.ShadowNodeOutgoing;
 
@@ -117,6 +118,13 @@ public class PROVESwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case PROVEPackage.RESOURCE: {
+			Resource resource = (Resource) theEObject;
+			T result = caseResource(resource);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -209,6 +217,21 @@ public class PROVESwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseArtifactStateInstance(ArtifactStateInstance object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Resource</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Resource</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResource(Resource object) {
 		return null;
 	}
 

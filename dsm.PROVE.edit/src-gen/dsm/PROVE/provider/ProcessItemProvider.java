@@ -59,6 +59,9 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 			addNotesPropertyDescriptor(object);
 			addArtifactInStateUsedPropertyDescriptor(object);
 			addResultArtifactInStatePropertyDescriptor(object);
+			addStartDatePropertyDescriptor(object);
+			addEndDatePropertyDescriptor(object);
+			addResourceUsedPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -125,6 +128,53 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 	}
 
 	/**
+	 * This adds a property descriptor for the Start Date feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addStartDatePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Process_startDate_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Process_startDate_feature",
+								"_UI_Process_type"),
+						PROVEPackage.Literals.PROCESS__START_DATE, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the End Date feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addEndDatePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Process_endDate_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Process_endDate_feature",
+								"_UI_Process_type"),
+						PROVEPackage.Literals.PROCESS__END_DATE, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Resource Used feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addResourceUsedPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Process_resourceUsed_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Process_resourceUsed_feature",
+								"_UI_Process_type"),
+						PROVEPackage.Literals.PROCESS__RESOURCE_USED, true, false, true, null, null, null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -140,6 +190,7 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 			childrenFeatures.add(PROVEPackage.Literals.PROCESS__PROCESS);
 			childrenFeatures.add(PROVEPackage.Literals.PROCESS__SHADOWNODEINCOMING);
 			childrenFeatures.add(PROVEPackage.Literals.PROCESS__SHADOWNODEOUTGOING);
+			childrenFeatures.add(PROVEPackage.Literals.PROCESS__RESOURCE);
 		}
 		return childrenFeatures;
 	}
@@ -205,12 +256,15 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 		switch (notification.getFeatureID(dsm.PROVE.Process.class)) {
 		case PROVEPackage.PROCESS__NAME:
 		case PROVEPackage.PROCESS__NOTES:
+		case PROVEPackage.PROCESS__START_DATE:
+		case PROVEPackage.PROCESS__END_DATE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case PROVEPackage.PROCESS__ARTIFACT:
 		case PROVEPackage.PROCESS__PROCESS:
 		case PROVEPackage.PROCESS__SHADOWNODEINCOMING:
 		case PROVEPackage.PROCESS__SHADOWNODEOUTGOING:
+		case PROVEPackage.PROCESS__RESOURCE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -245,6 +299,9 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 
 		newChildDescriptors.add(createChildParameter(PROVEPackage.Literals.PROCESS__SHADOWNODEOUTGOING,
 				PROVEFactory.eINSTANCE.createShadowNodeOutgoing()));
+
+		newChildDescriptors.add(
+				createChildParameter(PROVEPackage.Literals.PROCESS__RESOURCE, PROVEFactory.eINSTANCE.createResource()));
 	}
 
 	/**

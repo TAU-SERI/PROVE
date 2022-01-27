@@ -6,6 +6,7 @@ import dsm.PROVE.Artifact;
 import dsm.PROVE.ArtifactState;
 import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.Resource;
 import dsm.PROVE.ShadowNodeIncoming;
 import dsm.PROVE.ShadowNodeOutgoing;
 
@@ -99,6 +100,11 @@ public class PROVEAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseArtifactStateInstance(ArtifactStateInstance object) {
 			return createArtifactStateInstanceAdapter();
+		}
+
+		@Override
+		public Adapter caseResource(Resource object) {
+			return createResourceAdapter();
 		}
 
 		@Override
@@ -201,6 +207,20 @@ public class PROVEAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createArtifactStateInstanceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link dsm.PROVE.Resource <em>Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see dsm.PROVE.Resource
+	 * @generated
+	 */
+	public Adapter createResourceAdapter() {
 		return null;
 	}
 

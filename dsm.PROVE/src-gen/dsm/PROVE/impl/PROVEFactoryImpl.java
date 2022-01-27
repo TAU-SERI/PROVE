@@ -7,6 +7,7 @@ import dsm.PROVE.ArtifactState;
 import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEFactory;
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.Resource;
 import dsm.PROVE.ShadowNodeIncoming;
 import dsm.PROVE.ShadowNodeOutgoing;
 import dsm.PROVE.ShadowNodeTypeENUM;
@@ -75,6 +76,8 @@ public class PROVEFactoryImpl extends EFactoryImpl implements PROVEFactory {
 			return createShadowNodeOutgoing();
 		case PROVEPackage.ARTIFACT_STATE_INSTANCE:
 			return createArtifactStateInstance();
+		case PROVEPackage.RESOURCE:
+			return createResource();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -174,6 +177,17 @@ public class PROVEFactoryImpl extends EFactoryImpl implements PROVEFactory {
 	public ArtifactStateInstance createArtifactStateInstance() {
 		ArtifactStateInstanceImpl artifactStateInstance = new ArtifactStateInstanceImpl();
 		return artifactStateInstance;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Resource createResource() {
+		ResourceImpl resource = new ResourceImpl();
+		return resource;
 	}
 
 	/**
