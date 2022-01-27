@@ -3,6 +3,7 @@
 
 <product name="PROVE Tool v1.5" uid="PROVE.tool" id="sirius.clean.branding.product" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
+
    <configIni use="default">
    </configIni>
 
@@ -22,8 +23,9 @@
       </win>
    </launcher>
 
+
    <vm>
-      <windows include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+      <windows include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JRE-1.1</windows>
    </vm>
 
    <license>

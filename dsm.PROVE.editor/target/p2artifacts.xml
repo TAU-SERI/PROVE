@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='osgi.bundle' id='dsm.PROVE.editor' version='1.0.0.202111121816'>
+  <artifact classifier='osgi.bundle' id='dsm.PROVE.editor' version='1.0.0.202201271720'>
     <properties size='5'>
-      <property name='artifact.size' value='63339'/>
-      <property name='download.size' value='63339'/>
+      <property name='artifact.size' value='63341'/>
+      <property name='download.size' value='63341'/>
       <property name='maven-groupId' value='sirius.clean'/>
       <property name='maven-artifactId' value='dsm.PROVE.editor'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
