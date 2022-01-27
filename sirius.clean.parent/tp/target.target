@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
-<!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl --><target name="Clean" sequenceNumber="1643303704">
+<!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
+<target name="Clean" sequenceNumber="1643304807">
   <locations>
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.platform.sdk" version="0.0.0"/>
       <unit id="org.eclipse.emf" version="0.0.0"/>
       <unit id="org.eclipse.pde.feature.group" version="0.0.0"/>
@@ -13,7 +14,7 @@
       <unit id="org.eclipse.egit.feature.group" version="0.0.0"/>
       <repository location="https://download.eclipse.org/releases/2020-06/"/>
     </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.sirius.specifier.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.sirius.properties.feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.sirius.runtime.ide.ui.feature.group" version="0.0.0"/>
@@ -21,13 +22,13 @@
       <unit id="org.eclipse.eef.ide" version="0.0.0"/>
       <unit id="org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.acceleo.query.feature.group" version="0.0.0"/>
-      <repository location="https://download.eclipse.org/sirius/updates/releases/6.5.1/2020-09/"/>
+      <repository location="http://download.eclipse.org/sirius/updates/releases/6.3.4/2020-06"/>
     </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.antlr.runtime" version="0.0.0"/>
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20200529191137/repository"/>
     </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.justj.openjdk.hotspot.jre.full.feature.group" version="0.0.0"/>
       <repository location="https://download.eclipse.org/justj/jres/11/updates/release/11.0.2"/>
     </location>
