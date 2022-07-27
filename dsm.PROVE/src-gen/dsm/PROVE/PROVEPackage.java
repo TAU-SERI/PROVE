@@ -286,13 +286,22 @@ public interface PROVEPackage extends EPackage {
 	int PROCESS__RESOURCE_USED = 11;
 
 	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS__STATUS = 12;
+
+	/**
 	 * The number of structural features of the '<em>Process</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCESS_FEATURE_COUNT = 12;
+	int PROCESS_FEATURE_COUNT = 13;
 
 	/**
 	 * The number of operations of the '<em>Process</em>' class.
@@ -420,6 +429,15 @@ public interface PROVEPackage extends EPackage {
 	 * @ordered
 	 */
 	int SHADOW_NODE_INCOMING__RESOURCE_USED = PROCESS__RESOURCE_USED;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_INCOMING__STATUS = PROCESS__STATUS;
 
 	/**
 	 * The number of structural features of the '<em>Shadow Node Incoming</em>' class.
@@ -558,6 +576,15 @@ public interface PROVEPackage extends EPackage {
 	int SHADOW_NODE_OUTGOING__RESOURCE_USED = PROCESS__RESOURCE_USED;
 
 	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_OUTGOING__STATUS = PROCESS__STATUS;
+
+	/**
 	 * The number of structural features of the '<em>Shadow Node Outgoing</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -676,6 +703,16 @@ public interface PROVEPackage extends EPackage {
 	 * @generated
 	 */
 	int SHADOW_NODE_TYPE_ENUM = 7;
+
+	/**
+	 * The meta object id for the '{@link dsm.PROVE.STATUS_ENUM <em>STATUS ENUM</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see dsm.PROVE.STATUS_ENUM
+	 * @see dsm.PROVE.impl.PROVEPackageImpl#getSTATUS_ENUM()
+	 * @generated
+	 */
+	int STATUS_ENUM = 8;
 
 	/**
 	 * Returns the meta object for class '{@link dsm.PROVE.Artifact <em>Artifact</em>}'.
@@ -906,6 +943,17 @@ public interface PROVEPackage extends EPackage {
 	EReference getProcess_ResourceUsed();
 
 	/**
+	 * Returns the meta object for the attribute '{@link dsm.PROVE.Process#getStatus <em>Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Status</em>'.
+	 * @see dsm.PROVE.Process#getStatus()
+	 * @see #getProcess()
+	 * @generated
+	 */
+	EAttribute getProcess_Status();
+
+	/**
 	 * Returns the meta object for class '{@link dsm.PROVE.ShadowNodeIncoming <em>Shadow Node Incoming</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -998,6 +1046,16 @@ public interface PROVEPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getShadowNodeTypeENUM();
+
+	/**
+	 * Returns the meta object for enum '{@link dsm.PROVE.STATUS_ENUM <em>STATUS ENUM</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>STATUS ENUM</em>'.
+	 * @see dsm.PROVE.STATUS_ENUM
+	 * @generated
+	 */
+	EEnum getSTATUS_ENUM();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1197,6 +1255,14 @@ public interface PROVEPackage extends EPackage {
 		EReference PROCESS__RESOURCE_USED = eINSTANCE.getProcess_ResourceUsed();
 
 		/**
+		 * The meta object literal for the '<em><b>Status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESS__STATUS = eINSTANCE.getProcess_Status();
+
+		/**
 		 * The meta object literal for the '{@link dsm.PROVE.impl.ShadowNodeIncomingImpl <em>Shadow Node Incoming</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1278,6 +1344,16 @@ public interface PROVEPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum SHADOW_NODE_TYPE_ENUM = eINSTANCE.getShadowNodeTypeENUM();
+
+		/**
+		 * The meta object literal for the '{@link dsm.PROVE.STATUS_ENUM <em>STATUS ENUM</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see dsm.PROVE.STATUS_ENUM
+		 * @see dsm.PROVE.impl.PROVEPackageImpl#getSTATUS_ENUM()
+		 * @generated
+		 */
+		EEnum STATUS_ENUM = eINSTANCE.getSTATUS_ENUM();
 
 	}
 

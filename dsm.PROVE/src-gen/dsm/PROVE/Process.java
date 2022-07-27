@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link dsm.PROVE.Process#getEndDate <em>End Date</em>}</li>
  *   <li>{@link dsm.PROVE.Process#getResource <em>Resource</em>}</li>
  *   <li>{@link dsm.PROVE.Process#getResourceUsed <em>Resource Used</em>}</li>
+ *   <li>{@link dsm.PROVE.Process#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see dsm.PROVE.PROVEPackage#getProcess()
@@ -220,5 +221,30 @@ public interface Process extends EObject {
 	 * @generated
 	 */
 	EList<Resource> getResourceUsed();
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link dsm.PROVE.STATUS_ENUM}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' attribute.
+	 * @see dsm.PROVE.STATUS_ENUM
+	 * @see #setStatus(STATUS_ENUM)
+	 * @see dsm.PROVE.PROVEPackage#getProcess_Status()
+	 * @model transient="true" derived="true"
+	 * @generated
+	 */
+	STATUS_ENUM getStatus();
+
+	/**
+	 * Sets the value of the '{@link dsm.PROVE.Process#getStatus <em>Status</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' attribute.
+	 * @see dsm.PROVE.STATUS_ENUM
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(STATUS_ENUM value);
 
 } // Process

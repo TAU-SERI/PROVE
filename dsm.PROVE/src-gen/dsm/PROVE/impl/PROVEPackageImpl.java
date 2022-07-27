@@ -84,6 +84,13 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 	private EEnum shadowNodeTypeENUMEEnum = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum statuS_ENUMEEnum = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -363,6 +370,16 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getProcess_Status() {
+		return (EAttribute) processEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getShadowNodeIncoming() {
 		return shadowNodeIncomingEClass;
 	}
@@ -453,6 +470,16 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 	 * @generated
 	 */
 	@Override
+	public EEnum getSTATUS_ENUM() {
+		return statuS_ENUMEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public PROVEFactory getPROVEFactory() {
 		return (PROVEFactory) getEFactoryInstance();
 	}
@@ -500,6 +527,7 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		createEAttribute(processEClass, PROCESS__END_DATE);
 		createEReference(processEClass, PROCESS__RESOURCE);
 		createEReference(processEClass, PROCESS__RESOURCE_USED);
+		createEAttribute(processEClass, PROCESS__STATUS);
 
 		shadowNodeIncomingEClass = createEClass(SHADOW_NODE_INCOMING);
 
@@ -515,6 +543,7 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 
 		// Create enums
 		shadowNodeTypeENUMEEnum = createEEnum(SHADOW_NODE_TYPE_ENUM);
+		statuS_ENUMEEnum = createEEnum(STATUS_ENUM);
 	}
 
 	/**
@@ -609,6 +638,8 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		initEReference(getProcess_ResourceUsed(), this.getResource(), null, "resourceUsed", null, 0, -1,
 				dsm.PROVE.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcess_Status(), this.getSTATUS_ENUM(), "status", null, 0, 1, dsm.PROVE.Process.class,
+				IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(shadowNodeIncomingEClass, ShadowNodeIncoming.class, "ShadowNodeIncoming", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -641,6 +672,10 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		addEEnumLiteral(shadowNodeTypeENUMEEnum, ShadowNodeTypeENUM.INPUT);
 		addEEnumLiteral(shadowNodeTypeENUMEEnum, ShadowNodeTypeENUM.OUTPUT);
 		addEEnumLiteral(shadowNodeTypeENUMEEnum, ShadowNodeTypeENUM.INTERNAL);
+
+		initEEnum(statuS_ENUMEEnum, dsm.PROVE.STATUS_ENUM.class, "STATUS_ENUM");
+		addEEnumLiteral(statuS_ENUMEEnum, dsm.PROVE.STATUS_ENUM.UNSPECIFIED);
+		addEEnumLiteral(statuS_ENUMEEnum, dsm.PROVE.STATUS_ENUM.COMPLETED);
 
 		// Create resource
 		createResource(eNS_URI);

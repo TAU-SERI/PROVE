@@ -8,6 +8,7 @@ import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEFactory;
 import dsm.PROVE.PROVEPackage;
 import dsm.PROVE.Resource;
+import dsm.PROVE.STATUS_ENUM;
 import dsm.PROVE.ShadowNodeIncoming;
 import dsm.PROVE.ShadowNodeOutgoing;
 import dsm.PROVE.ShadowNodeTypeENUM;
@@ -93,6 +94,8 @@ public class PROVEFactoryImpl extends EFactoryImpl implements PROVEFactory {
 		switch (eDataType.getClassifierID()) {
 		case PROVEPackage.SHADOW_NODE_TYPE_ENUM:
 			return createShadowNodeTypeENUMFromString(eDataType, initialValue);
+		case PROVEPackage.STATUS_ENUM:
+			return createSTATUS_ENUMFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -108,6 +111,8 @@ public class PROVEFactoryImpl extends EFactoryImpl implements PROVEFactory {
 		switch (eDataType.getClassifierID()) {
 		case PROVEPackage.SHADOW_NODE_TYPE_ENUM:
 			return convertShadowNodeTypeENUMToString(eDataType, instanceValue);
+		case PROVEPackage.STATUS_ENUM:
+			return convertSTATUS_ENUMToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -209,6 +214,28 @@ public class PROVEFactoryImpl extends EFactoryImpl implements PROVEFactory {
 	 * @generated
 	 */
 	public String convertShadowNodeTypeENUMToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public STATUS_ENUM createSTATUS_ENUMFromString(EDataType eDataType, String initialValue) {
+		STATUS_ENUM result = STATUS_ENUM.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSTATUS_ENUMToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

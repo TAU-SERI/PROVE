@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='dsm.PROVE.editor' version='1.0.0.202201271905' generation='2'>
-    <update id='dsm.PROVE.editor' range='[0.0.0,1.0.0.202201271905)' severity='0'/>
+  <unit id='dsm.PROVE.editor' version='1.0.0.202207271136' generation='2'>
+    <update id='dsm.PROVE.editor' range='[0.0.0,1.0.0.202207271136)' severity='0'/>
     <properties size='8'>
       <property name='df_LT.pluginName' value='dsm.PROVE Editor'/>
       <property name='df_LT.providerName' value='www.example.org'/>
@@ -13,10 +13,10 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='6'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.editor' version='1.0.0.202201271905'/>
-      <provided namespace='osgi.bundle' name='dsm.PROVE.editor' version='1.0.0.202201271905'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.editor' version='1.0.0.202207271136'/>
+      <provided namespace='osgi.bundle' name='dsm.PROVE.editor' version='1.0.0.202207271136'/>
       <provided namespace='java.package' name='dsm.PROVE.presentation' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='dsm.PROVE.editor' version='1.0.0.202201271905'>
+      <provided namespace='osgi.identity' name='dsm.PROVE.editor' version='1.0.0.202207271136'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -41,13 +41,13 @@
       </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='dsm.PROVE.editor' version='1.0.0.202201271905'/>
+      <artifact classifier='osgi.bundle' id='dsm.PROVE.editor' version='1.0.0.202207271136'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: dsm.PROVE.editor;singleton:=true&#xA;Bundle-Version: 1.0.0.202201271905&#xA;
+          Bundle-SymbolicName: dsm.PROVE.editor;singleton:=true&#xA;Bundle-Version: 1.0.0.202207271136&#xA;
         </instruction>
       </instructions>
     </touchpointData>

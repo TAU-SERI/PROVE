@@ -6,6 +6,7 @@ import dsm.PROVE.Artifact;
 import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEPackage;
 import dsm.PROVE.Resource;
+import dsm.PROVE.STATUS_ENUM;
 import dsm.PROVE.ShadowNodeIncoming;
 import dsm.PROVE.ShadowNodeOutgoing;
 
@@ -48,6 +49,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getEndDate <em>End Date</em>}</li>
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getResource <em>Resource</em>}</li>
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getResourceUsed <em>Resource Used</em>}</li>
+ *   <li>{@link dsm.PROVE.impl.ProcessImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -212,6 +214,26 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	 * @ordered
 	 */
 	protected EList<Resource> resourceUsed;
+
+	/**
+	 * The default value of the '{@link #getStatus() <em>Status</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStatus()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final STATUS_ENUM STATUS_EDEFAULT = STATUS_ENUM.UNSPECIFIED;
+
+	/**
+	 * The cached value of the '{@link #getStatus() <em>Status</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStatus()
+	 * @generated
+	 * @ordered
+	 */
+	protected STATUS_ENUM status = STATUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -474,6 +496,29 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public STATUS_ENUM getStatus() {
+		return status;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(STATUS_ENUM newStatus) {
+		STATUS_ENUM oldStatus = status;
+		status = newStatus == null ? STATUS_EDEFAULT : newStatus;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PROVEPackage.PROCESS__STATUS, oldStatus, status));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -546,6 +591,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			return getResource();
 		case PROVEPackage.PROCESS__RESOURCE_USED:
 			return getResourceUsed();
+		case PROVEPackage.PROCESS__STATUS:
+			return getStatus();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -595,6 +642,9 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			getResourceUsed().clear();
 			getResourceUsed().addAll((Collection<? extends Resource>) newValue);
 			return;
+		case PROVEPackage.PROCESS__STATUS:
+			setStatus((STATUS_ENUM) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -637,6 +687,9 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		case PROVEPackage.PROCESS__RESOURCE_USED:
 			getResourceUsed().clear();
 			return;
+		case PROVEPackage.PROCESS__STATUS:
+			setStatus(STATUS_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -673,6 +726,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			return resource != null && !resource.isEmpty();
 		case PROVEPackage.PROCESS__RESOURCE_USED:
 			return resourceUsed != null && !resourceUsed.isEmpty();
+		case PROVEPackage.PROCESS__STATUS:
+			return status != STATUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -696,6 +751,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		result.append(startDate);
 		result.append(", endDate: ");
 		result.append(endDate);
+		result.append(", status: ");
+		result.append(status);
 		result.append(')');
 		return result.toString();
 	}
