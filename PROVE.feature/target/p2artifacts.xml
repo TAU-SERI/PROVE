@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='org.eclipse.update.feature' id='PROVE.feature' version='1.0.0.202201271905'>
+  <artifact classifier='org.eclipse.update.feature' id='PROVE.feature' version='1.0.0.202207271136'>
     <properties size='6'>
-      <property name='artifact.size' value='1148'/>
-      <property name='download.size' value='1148'/>
+      <property name='artifact.size' value='1268'/>
+      <property name='download.size' value='1268'/>
       <property name='maven-groupId' value='sirius.clean'/>
       <property name='maven-artifactId' value='PROVE.feature'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>

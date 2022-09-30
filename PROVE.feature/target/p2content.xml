@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='2'>
-  <unit id='PROVE.feature.feature.group' version='1.0.0.202201271905' singleton='false'>
-    <update id='PROVE.feature.feature.group' range='[0.0.0,1.0.0.202201271905)' severity='0'/>
+  <unit id='PROVE.feature.feature.group' version='1.0.0.202207271136' singleton='false'>
+    <update id='PROVE.feature.feature.group' range='[0.0.0,1.0.0.202207271136)' severity='0'/>
     <properties size='8'>
       <property name='org.eclipse.equinox.p2.name' value='Feature'/>
       <property name='org.eclipse.equinox.p2.description' value='PROVE Tool&#xA;by Avi Shaked'/>
@@ -13,54 +13,66 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='PROVE.feature.feature.group' version='1.0.0.202201271905'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='PROVE.feature.feature.group' version='1.0.0.202207271136'/>
     </provides>
-    <requires size='45'>
+    <requires size='57'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius' range='6.3.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.ui' range='6.3.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.common.acceleo.aql' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel' range='0.1.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel.edit' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel.editor' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel.design' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='SymbiosisDM' range='0.1.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='SymbiosisDM.edit' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='SymbiosisDM.editor' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.ide.ui' range='2.1.5'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.diagram.ui' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.notation.feature.group' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='3.17.100'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.transaction' range='1.9.1'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.common' range='6.3.1'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.edit' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.editor' range='1.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.notation.feature.group' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.notation.feature.group' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.notation.feature.group' range='0.0.0'/>
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.notation.feature.group' range='0.0.0'/>
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.runtime.feature.group' range='0.0.0'/>
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.runtime.ide.ui.feature.group' range='0.0.0'/>
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.transaction' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.common.core' range='1.7.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.gmf.runtime.notation.edit' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.pde.core' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.common' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.common.ui' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.diagram' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.diagram.ui' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.ecore.extender' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.ext.base' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.ui' range='[6.0.0,7.0.0)'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.workbench' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.common' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.common.ui' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.core' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.core.ext.widgets.reference' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.ext.widgets.reference' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.ide' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.ide.ui' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.ide.ui.ext.widgets.reference' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.ide.ui.properties' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.properties.ui' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.eef.properties.ui.legacy' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.properties.feature.feature.group' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.query.feature.group' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.edit' range='[1.0.0.202201271905,1.0.0.202201271905]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.editor' range='[1.0.0.202201271905,1.0.0.202201271905]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE' range='[1.0.0.202201271905,1.0.0.202201271905]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='PROVE.design' range='[1.0.0.202201271905,1.0.0.202201271905]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='PROVE.feature.feature.jar' range='[1.0.0.202201271905,1.0.0.202201271905]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.diagram' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.expressions' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.diagram.ui' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.ext.base' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.edit' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE.editor' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.PROVE' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='PROVE.design' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel.design' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel.edit' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='DependencyModel.editor' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='SymbiosisDM' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='SymbiosisDM.edit' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='SymbiosisDM.editor' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='symbiosis.design' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='FRIPP.design' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.FRIPP' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.FRIPP.edit' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='dsm.FRIPP.editor' range='[1.0.0.202207271136,1.0.0.202207271136]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='PROVE.feature.feature.jar' range='[1.0.0.202207271136,1.0.0.202207271136]'>
         <filter>
           (org.eclipse.update.install.features=true)
         </filter>
@@ -76,7 +88,7 @@
       PROVE Tool&#xA;by Avi Shaked
     </copyright>
   </unit>
-  <unit id='PROVE.feature.feature.jar' version='1.0.0.202201271905'>
+  <unit id='PROVE.feature.feature.jar' version='1.0.0.202207271136'>
     <properties size='7'>
       <property name='org.eclipse.equinox.p2.name' value='Feature'/>
       <property name='org.eclipse.equinox.p2.description' value='PROVE Tool&#xA;by Avi Shaked'/>
@@ -87,15 +99,15 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='3'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='PROVE.feature.feature.jar' version='1.0.0.202201271905'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='PROVE.feature.feature.jar' version='1.0.0.202207271136'/>
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-      <provided namespace='org.eclipse.update.feature' name='PROVE.feature' version='1.0.0.202201271905'/>
+      <provided namespace='org.eclipse.update.feature' name='PROVE.feature' version='1.0.0.202207271136'/>
     </provides>
     <filter>
       (org.eclipse.update.install.features=true)
     </filter>
     <artifacts size='1'>
-      <artifact classifier='org.eclipse.update.feature' id='PROVE.feature' version='1.0.0.202201271905'/>
+      <artifact classifier='org.eclipse.update.feature' id='PROVE.feature' version='1.0.0.202207271136'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
