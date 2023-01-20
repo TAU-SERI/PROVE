@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.MissingResourceException;
 import java.util.StringTokenizer;
+
 import org.eclipse.emf.common.CommonPlugin;
 
 import org.eclipse.emf.common.util.URI;
@@ -28,6 +29,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 
 import org.eclipse.emf.edit.ui.provider.ExtendedImageRegistry;
+
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
@@ -43,6 +45,7 @@ import org.eclipse.jface.viewers.IStructuredSelection;
 
 import org.eclipse.jface.wizard.Wizard;
 import org.eclipse.jface.wizard.WizardPage;
+
 import org.eclipse.swt.SWT;
 
 import org.eclipse.swt.events.ModifyListener;
@@ -54,8 +57,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
+
 import org.eclipse.ui.INewWizard;
 import org.eclipse.ui.IWorkbench;
 
@@ -71,6 +73,7 @@ import dsm.PROVE.PROVEPackage;
 import dsm.PROVE.provider.PROVEEditPlugin;
 
 import org.eclipse.core.runtime.Path;
+
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.StructuredSelection;
 
@@ -78,7 +81,6 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
 
 /**
  * This is a simple wizard for creating a new model file.
@@ -180,7 +182,7 @@ public class PROVEModelWizard extends Wizard implements INewWizard {
 	 * Returns the names of the types that can be created as the root object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated not
+	 * @generated
 	 */
 	protected Collection<String> getInitialObjectNames() {
 		if (initialObjectNames == null) {
@@ -195,11 +197,6 @@ public class PROVEModelWizard extends Wizard implements INewWizard {
 			}
 			Collections.sort(initialObjectNames, CommonPlugin.INSTANCE.getComparator());
 		}
-		//Overriding retrieved names with the only Class permissible for PROVE root - Process
-		//By Avi Shaked
-		initialObjectNames.clear();
-		initialObjectNames.add("Process");
-		//End of Overriding
 		return initialObjectNames;
 	}
 
@@ -299,35 +296,6 @@ public class PROVEModelWizard extends Wizard implements INewWizard {
 			PROVEEditorPlugin.INSTANCE.log(exception);
 			return false;
 		}
-	}
-
-	/**
-	 * ??????????????
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated not
-	 */
-	private IProject activateProject() {
-		// TODO Auto-generated method stub
-		// Avi
-
-		IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
-		IWorkbenchPage activePage = window.getActivePage();
-		IProject project = null;
-		IEditorPart activeEditor = activePage.getActiveEditor();
-
-		if (activeEditor != null) {
-			IEditorInput input = activeEditor.getEditorInput();
-			project = input.getAdapter(IProject.class);
-			if (project == null) {
-				IResource resource = input.getAdapter(IResource.class);
-				if (resource != null) {
-					project = resource.getProject();
-				}
-			}
-		}
-
-		return project;
 	}
 
 	/**

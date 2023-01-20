@@ -154,7 +154,7 @@ public class PROVEprojectNewWizard extends BasicNewProjectResourceWizard impleme
 						try {
 							res.save(Collections.emptyMap());
 						} catch (final IOException e) {
-							Activator.logError("Erro while creating the model", e);
+							Activator.logError("Error while creating the model", e);
 						}
 
 						session.addSemanticResource(semanticModelURI, new NullProgressMonitor());

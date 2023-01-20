@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="PROVE.feature"
-      label="Feature"
+      label="PROVE Tool Feature"
       version="1.0.0.qualifier"
       provider-name="Avi Shaked">
 
@@ -20,34 +20,30 @@ by Avi Shaked
    </license>
 
    <requires>
+      <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.core.resources"/>
-      <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="org.eclipse.emf.edit.ui"/>
-      <import plugin="org.eclipse.ui.ide"/>
       <import plugin="org.eclipse.sirius" version="6.3.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.sirius.ui" version="6.3.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.ecore"/>
-      <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.sirius.common.acceleo.aql"/>
-      <import plugin="DependencyModel" version="0.1.0" match="greaterOrEqual"/>
-      <import plugin="DependencyModel.edit" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="DependencyModel.editor" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="DependencyModel.design" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="SymbiosisDM" version="0.1.0" match="greaterOrEqual"/>
-      <import plugin="SymbiosisDM.edit" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="SymbiosisDM.editor" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.sirius.diagram"/>
       <import plugin="dsm.PROVE" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.eef.ide.ui" version="2.1.5" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.expressions"/>
       <import plugin="com.google.guava"/>
       <import plugin="org.eclipse.gmf.runtime.diagram.ui"/>
+      <import plugin="org.eclipse.sirius.diagram.ui"/>
       <import feature="org.eclipse.gmf.runtime.notation" version="0.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.navigator"/>
+      <import plugin="org.eclipse.sirius.ext.base"/>
+      <import plugin="org.eclipse.sirius.ui" version="6.3.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.ide" version="3.17.100" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.transaction" version="1.9.1" match="greaterOrEqual"/>
       <import plugin="org.eclipse.sirius.common" version="6.3.1" match="greaterOrEqual"/>
-      <import plugin="dsm.PROVE.edit" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="dsm.PROVE.editor" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.edit"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import feature="org.eclipse.gmf.runtime.notation" version="0.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.gmf.runtime.notation" version="0.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.gmf.runtime.notation" version="0.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.gmf.runtime.notation" version="0.0.0" match="greaterOrEqual"/>
@@ -55,22 +51,10 @@ by Avi Shaked
       <import feature="org.eclipse.sirius.runtime" version="0.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.sirius.runtime.ide.ui" version="0.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.sirius.runtime.ide.ui.acceleo" version="0.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.edit"/>
-      <import plugin="org.eclipse.sirius.diagram"/>
-      <import plugin="org.eclipse.core.expressions"/>
-      <import plugin="org.eclipse.sirius.diagram.ui"/>
-      <import plugin="org.eclipse.sirius.ext.base"/>
    </requires>
 
    <plugin
-         id="dsm.PROVE.edit"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="dsm.PROVE.editor"
+         id="PROVE.design"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -84,91 +68,14 @@ by Avi Shaked
          unpack="false"/>
 
    <plugin
-         id="PROVE.design"
+         id="dsm.PROVE.edit"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="DependencyModel"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="DependencyModel.design"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="DependencyModel.edit"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="DependencyModel.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="SymbiosisDM"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="SymbiosisDM.edit"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="SymbiosisDM.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="symbiosis.design"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="FRIPP.design"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="dsm.FRIPP"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="dsm.FRIPP.edit"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="dsm.FRIPP.editor"
+         id="dsm.PROVE.editor"
          download-size="0"
          install-size="0"
          version="0.0.0"
