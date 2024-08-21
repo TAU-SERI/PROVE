@@ -270,5 +270,4 @@ public interface Process extends EObject {
 	 */
 	void setSeqNum(String value);
 
-
 } // Process

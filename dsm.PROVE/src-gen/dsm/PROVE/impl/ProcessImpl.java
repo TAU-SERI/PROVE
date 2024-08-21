@@ -260,7 +260,7 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated not
+	 * @generated
 	 */
 	protected ProcessImpl() {
 		super();
@@ -327,8 +327,11 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		if (parentObject != null) {
 			if (parentObject != null && parentObject instanceof dsm.PROVE.Process && null == seqNum) {
 				dsm.PROVE.Process process = (dsm.PROVE.Process) parentObject;
-				String sequenceNumber = process.getSeqNum();
-				setSeqNum(sequenceNumber + ".1");
+				String sequenceNumber = process.getSeqNum() + ".1";
+				if (null == process.getSeqNum()) {
+					sequenceNumber = "1";
+				}
+				setSeqNum(sequenceNumber);
 			} else {
 				setSeqNum(parentObject.getClass().getName());
 			}
