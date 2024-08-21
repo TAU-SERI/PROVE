@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link dsm.PROVE.Process#getResource <em>Resource</em>}</li>
  *   <li>{@link dsm.PROVE.Process#getResourceUsed <em>Resource Used</em>}</li>
  *   <li>{@link dsm.PROVE.Process#getStatus <em>Status</em>}</li>
+ *   <li>{@link dsm.PROVE.Process#getSeqNum <em>Seq Num</em>}</li>
  * </ul>
  *
  * @see dsm.PROVE.PROVEPackage#getProcess()
@@ -246,5 +247,28 @@ public interface Process extends EObject {
 	 * @generated
 	 */
 	void setStatus(STATUS_ENUM value);
+
+	/**
+	 * Returns the value of the '<em><b>Seq Num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Seq Num</em>' attribute.
+	 * @see #setSeqNum(String)
+	 * @see dsm.PROVE.PROVEPackage#getProcess_SeqNum()
+	 * @model
+	 * @generated
+	 */
+	String getSeqNum();
+
+	/**
+	 * Sets the value of the '{@link dsm.PROVE.Process#getSeqNum <em>Seq Num</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Seq Num</em>' attribute.
+	 * @see #getSeqNum()
+	 * @generated
+	 */
+	void setSeqNum(String value);
+
 
 } // Process

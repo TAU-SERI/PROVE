@@ -4,10 +4,10 @@ package dsm.PROVE.impl;
 
 import dsm.PROVE.ArtifactStateInstance;
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.SemanticUtil;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -191,7 +191,7 @@ public class ArtifactStateInstanceImpl extends MinimalEObjectImpl.Container impl
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated not
 	 */
 	@Override
 	public void setOriginatingActivity(dsm.PROVE.Process newOriginatingActivity) {
@@ -200,9 +200,14 @@ public class ArtifactStateInstanceImpl extends MinimalEObjectImpl.Container impl
 			if (originatingActivity != null)
 				msgs = ((InternalEObject) originatingActivity).eInverseRemove(this,
 						PROVEPackage.PROCESS__RESULT_ARTIFACT_IN_STATE, dsm.PROVE.Process.class, msgs);
-			if (newOriginatingActivity != null)
+			if (newOriginatingActivity != null) {
+				String order = SemanticUtil.incrementLastNumber(newOriginatingActivity.getSeqNum());
+				if (null != usedByActivity) {
+					usedByActivity.setSeqNum(order);
+				}
 				msgs = ((InternalEObject) newOriginatingActivity).eInverseAdd(this,
 						PROVEPackage.PROCESS__RESULT_ARTIFACT_IN_STATE, dsm.PROVE.Process.class, msgs);
+			}
 			msgs = basicSetOriginatingActivity(newOriginatingActivity, msgs);
 			if (msgs != null)
 				msgs.dispatch();

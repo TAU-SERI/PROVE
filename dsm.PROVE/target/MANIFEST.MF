@@ -3,11 +3,10 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: dsm.PROVE;singleton:=true
 Automatic-Module-Name: dsm.PROVE
-Bundle-Version: 1.0.0.202301201338
+Bundle-Version: 1.0.0.202408211010
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: dsm.PROVE,dsm.PROVE.impl; uses:="org.eclipse.emf.ecore, 
   org.eclipse.emf.ecore.impl,  org.eclipse.emf.common.util,  org.eclipse
  .emf.common.notify,  dsm.PROVE",dsm.PROVE.util; uses:="org.eclipse.emf.
@@ -16,4 +15,5 @@ Export-Package: dsm.PROVE,dsm.PROVE.impl; uses:="org.eclipse.emf.ecore,
 Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibilit
  y:=reexport
 Bundle-ActivationPolicy: lazy
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 

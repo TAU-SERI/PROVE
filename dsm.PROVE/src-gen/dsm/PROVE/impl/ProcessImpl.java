@@ -19,6 +19,7 @@ import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -50,6 +51,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getResource <em>Resource</em>}</li>
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getResourceUsed <em>Resource Used</em>}</li>
  *   <li>{@link dsm.PROVE.impl.ProcessImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link dsm.PROVE.impl.ProcessImpl#getSeqNum <em>Seq Num</em>}</li>
  * </ul>
  *
  * @generated
@@ -236,9 +238,29 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	protected STATUS_ENUM status = STATUS_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getSeqNum() <em>Seq Num</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see #getSeqNum()
 	 * @generated
+	 * @ordered
+	 */
+	protected static final String SEQ_NUM_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getSeqNum() <em>Seq Num</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSeqNum()
+	 * @generated
+	 * @ordered
+	 */
+	protected String seqNum = SEQ_NUM_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated not
 	 */
 	protected ProcessImpl() {
 		super();
@@ -294,12 +316,24 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated not
 	 */
 	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
+		EObject parentObject = this.eContainer();
+
+		if (parentObject != null) {
+			if (parentObject != null && parentObject instanceof dsm.PROVE.Process && null == seqNum) {
+				dsm.PROVE.Process process = (dsm.PROVE.Process) parentObject;
+				String sequenceNumber = process.getSeqNum();
+				setSeqNum(sequenceNumber + ".1");
+			} else {
+				setSeqNum(parentObject.getClass().getName());
+			}
+		}
+
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, PROVEPackage.PROCESS__NAME, oldName, name));
 	}
@@ -519,6 +553,29 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public String getSeqNum() {
+		return seqNum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSeqNum(String newSeqNum) {
+		String oldSeqNum = seqNum;
+		seqNum = newSeqNum;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PROVEPackage.PROCESS__SEQ_NUM, oldSeqNum, seqNum));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -593,6 +650,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			return getResourceUsed();
 		case PROVEPackage.PROCESS__STATUS:
 			return getStatus();
+		case PROVEPackage.PROCESS__SEQ_NUM:
+			return getSeqNum();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -645,6 +704,9 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		case PROVEPackage.PROCESS__STATUS:
 			setStatus((STATUS_ENUM) newValue);
 			return;
+		case PROVEPackage.PROCESS__SEQ_NUM:
+			setSeqNum((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -690,6 +752,9 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		case PROVEPackage.PROCESS__STATUS:
 			setStatus(STATUS_EDEFAULT);
 			return;
+		case PROVEPackage.PROCESS__SEQ_NUM:
+			setSeqNum(SEQ_NUM_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -728,6 +793,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 			return resourceUsed != null && !resourceUsed.isEmpty();
 		case PROVEPackage.PROCESS__STATUS:
 			return status != STATUS_EDEFAULT;
+		case PROVEPackage.PROCESS__SEQ_NUM:
+			return SEQ_NUM_EDEFAULT == null ? seqNum != null : !SEQ_NUM_EDEFAULT.equals(seqNum);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -753,6 +820,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements dsm.PRO
 		result.append(endDate);
 		result.append(", status: ");
 		result.append(status);
+		result.append(", seqNum: ");
+		result.append(seqNum);
 		result.append(')');
 		return result.toString();
 	}

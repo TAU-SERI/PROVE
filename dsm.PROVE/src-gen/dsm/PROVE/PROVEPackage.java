@@ -295,13 +295,22 @@ public interface PROVEPackage extends EPackage {
 	int PROCESS__STATUS = 12;
 
 	/**
+	 * The feature id for the '<em><b>Seq Num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS__SEQ_NUM = 13;
+
+	/**
 	 * The number of structural features of the '<em>Process</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCESS_FEATURE_COUNT = 13;
+	int PROCESS_FEATURE_COUNT = 14;
 
 	/**
 	 * The number of operations of the '<em>Process</em>' class.
@@ -438,6 +447,15 @@ public interface PROVEPackage extends EPackage {
 	 * @ordered
 	 */
 	int SHADOW_NODE_INCOMING__STATUS = PROCESS__STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Seq Num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_INCOMING__SEQ_NUM = PROCESS__SEQ_NUM;
 
 	/**
 	 * The number of structural features of the '<em>Shadow Node Incoming</em>' class.
@@ -583,6 +601,15 @@ public interface PROVEPackage extends EPackage {
 	 * @ordered
 	 */
 	int SHADOW_NODE_OUTGOING__STATUS = PROCESS__STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Seq Num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHADOW_NODE_OUTGOING__SEQ_NUM = PROCESS__SEQ_NUM;
 
 	/**
 	 * The number of structural features of the '<em>Shadow Node Outgoing</em>' class.
@@ -954,6 +981,17 @@ public interface PROVEPackage extends EPackage {
 	EAttribute getProcess_Status();
 
 	/**
+	 * Returns the meta object for the attribute '{@link dsm.PROVE.Process#getSeqNum <em>Seq Num</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Seq Num</em>'.
+	 * @see dsm.PROVE.Process#getSeqNum()
+	 * @see #getProcess()
+	 * @generated
+	 */
+	EAttribute getProcess_SeqNum();
+
+	/**
 	 * Returns the meta object for class '{@link dsm.PROVE.ShadowNodeIncoming <em>Shadow Node Incoming</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1261,6 +1299,14 @@ public interface PROVEPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PROCESS__STATUS = eINSTANCE.getProcess_Status();
+
+		/**
+		 * The meta object literal for the '<em><b>Seq Num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESS__SEQ_NUM = eINSTANCE.getProcess_SeqNum();
 
 		/**
 		 * The meta object literal for the '{@link dsm.PROVE.impl.ShadowNodeIncomingImpl <em>Shadow Node Incoming</em>}' class.

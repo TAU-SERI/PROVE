@@ -63,6 +63,7 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 			addEndDatePropertyDescriptor(object);
 			addResourceUsedPropertyDescriptor(object);
 			addStatusPropertyDescriptor(object);
+			addSeqNumPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -192,6 +193,22 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 	}
 
 	/**
+	 * This adds a property descriptor for the Seq Num feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSeqNumPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Process_seqNum_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Process_seqNum_feature",
+								"_UI_Process_type"),
+						PROVEPackage.Literals.PROCESS__SEQ_NUM, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -276,6 +293,7 @@ public class ProcessItemProvider extends ItemProviderAdapter implements IEditing
 		case PROVEPackage.PROCESS__START_DATE:
 		case PROVEPackage.PROCESS__END_DATE:
 		case PROVEPackage.PROCESS__STATUS:
+		case PROVEPackage.PROCESS__SEQ_NUM:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case PROVEPackage.PROCESS__ARTIFACT:
