@@ -43,6 +43,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/resource"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PROVE.ecore#//Process/resourceUsed"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Process/status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PROVE.ecore#//Process/seqNum"/>
     </genClasses>
     <genClasses ecoreClass="PROVE.ecore#//ShadowNodeIncoming"/>
     <genClasses ecoreClass="PROVE.ecore#//ShadowNodeOutgoing"/>

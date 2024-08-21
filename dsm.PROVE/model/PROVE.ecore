@@ -36,6 +36,7 @@
         eType="#//Resource"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="#//STATUS_ENUM"
         transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="seqNum" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ShadowNodeTypeENUM">
     <eLiterals name="Reserved_NotInUse"/>

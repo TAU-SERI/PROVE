@@ -380,6 +380,16 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getProcess_SeqNum() {
+		return (EAttribute) processEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getShadowNodeIncoming() {
 		return shadowNodeIncomingEClass;
 	}
@@ -528,6 +538,7 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 		createEReference(processEClass, PROCESS__RESOURCE);
 		createEReference(processEClass, PROCESS__RESOURCE_USED);
 		createEAttribute(processEClass, PROCESS__STATUS);
+		createEAttribute(processEClass, PROCESS__SEQ_NUM);
 
 		shadowNodeIncomingEClass = createEClass(SHADOW_NODE_INCOMING);
 
@@ -640,6 +651,8 @@ public class PROVEPackageImpl extends EPackageImpl implements PROVEPackage {
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProcess_Status(), this.getSTATUS_ENUM(), "status", null, 0, 1, dsm.PROVE.Process.class,
 				IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcess_SeqNum(), ecorePackage.getEString(), "seqNum", null, 0, 1, dsm.PROVE.Process.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shadowNodeIncomingEClass, ShadowNodeIncoming.class, "ShadowNodeIncoming", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
